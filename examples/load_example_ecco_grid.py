@@ -51,11 +51,11 @@ def construct_grid(ds):
 
     grid = xgcm.Grid(
         ds,
-        coords=coords,
-        metrics=metrics,
-        boundary=boundary,
-        fill_value=fill_value,
+        # coords=coords,
+        # metrics=metrics,
+        # boundary=boundary,
+        # fill_value=fill_value,
         face_connections=face_connections,
-        autoparse_metadata=False,
+        autoparse_metadata=True,
     )
     return grid

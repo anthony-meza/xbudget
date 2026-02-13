@@ -3,30 +3,30 @@ mass: # finite-volume mass budget in units of kg/s
   lambda: "density"
   thickness: "thkcello"
   lhs:
-    var: null
-    sum:
-      var: null
-      Eulerian_tendency:
-        var: null
-        product:
-          var: null
-          thickness_tendency:
-            var: null
-            product:
-              var: null
-              dEtan:
-                var: null
-                difference:
-                  var: null
-                  etan: "ETAN_bounds"
-              dt:
-                var: 1.0
-          density:
-            var: 1035.0
-          area:
-            var: "rA"
-          thickness:
-            var: "drF"
+    # var: null
+    # sum:
+    #   var: null
+    #   Eulerian_tendency:
+    #     var: null
+    #     product:
+    #       var: null
+    #       thickness_tendency:
+    #         var: null
+    #         product:
+    #           var: null
+    #           dEtan:
+    #             var: null
+    #             difference:
+    #               var: null
+    #               etan: "ETAN_bounds"
+    #           dt:
+    #             var: 1.0
+    #       density:
+    #         var: 1035.0
+    #       area:
+    #         var: "rA"
+    #       thickness:
+    #         var: "drF"
   rhs:
     var: null
     sum:
