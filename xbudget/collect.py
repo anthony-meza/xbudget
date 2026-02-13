@@ -279,6 +279,14 @@ def budget_fill_dict(data, xbudget_dict, namepath):
                     axis = candidate_axes[0]
                 else:
                     raise ValueError("Flux difference inconsistent with finite volume discretization.")
+                stag_dim = staggered_axes[axis]  # NEW: the staggered/core dim used by this diff
+                da = ds[v_term]                  # NEW: local handle for chunk inspection / rechunk
+
+                if hasattr(da.data, "chunks") and stag_dim in da.dims and len(da.chunksizes.get(stag_dim, ())) > 1:  # NEW
+                    warnings.warn(f"{v_term}: rechunking '{stag_dim}' -> -1 for xgcm grid.diff (inner/outer core dim cannot be multi-chunk).", UserWarning)  # NEW
+                    da = da.chunk({stag_dim: -1})  # NEW
+
+                var = grid.diff(da.fillna(0.), axis)  # CHANGED: use `da` so rechunk takes effect
                 var = grid.diff(ds[v_term].fillna(0.), axis)
                 var_name = f"{namepath}_difference"
                 var = var.rename(var_name)
@@ -289,6 +297,24 @@ def budget_fill_dict(data, xbudget_dict, namepath):
                     var_pref = var.copy()
             else:
                 raise ValueError("Input `ds` must be `xgcm.Grid` instance if using `difference` operations.")
+                
+        if k == "face_connection_difference":
+            print("hello, it's Anthony")
+            if grid is not None:
+                Fx_name, Fy_name = v["X"], v["Y"]
+                if Fx_name not in ds or Fy_name not in ds:
+                    miss = Fx_name if Fx_name not in ds else Fy_name
+                    warnings.warn(f"Variable {miss} is missing from the dataset `ds`, so it is being skipped. To suppress this warning, remove {miss} from the `xbudget_dict`.")
+                    continue
+                var = calc_2d_flux_convergence_ghost(ds[Fx_name].fillna(0.), ds[Fy_name].fillna(0.), ds)
+                var_name = f"{namepath}_lateral_difference"
+                var = var.rename(var_name)
+                var.attrs["provenance"] = [Fx_name, Fy_name]
+                ds[var_name] = var
+                if var_pref is None:
+                    var_pref = var.copy()
+            else:
+                raise ValueError("Input `ds` must be `xgcm.Grid` instance if using `lateral_difference` operations.")
 
     return var_pref
 
