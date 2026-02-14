@@ -37,7 +37,7 @@ mass: # finite-volume mass budget in units of kg/s
           var: null
           lateral:
             var: null
-            product:
+            sum:
               var: null
               mass_flux_convergence: #div(-Fx, -Fy) = -div(Fx, Fy) = conv(Fx, Fy)
                 var: null
@@ -61,6 +61,7 @@ mass: # finite-volume mass budget in units of kg/s
                       v_velocity: "VVELMASS"
                       dxG: "dxG"
                       dz: "drF"
+                      
           interfacial:
             var: null
             product:
