@@ -48,7 +48,7 @@ mass: # finite-volume mass budget in units of kg/s
                     product:
                       var: null
                       sign: -1.0
-                      density: 1035.0
+                      density: 1029.0
                       u_velocity: "UVELMASS"
                       dyG: "dyG"
                       dz: "drF"
@@ -57,7 +57,7 @@ mass: # finite-volume mass budget in units of kg/s
                     product:
                       var: null
                       sign: -1.0
-                      density: 1035.0
+                      density: 1029.0
                       v_velocity: "VVELMASS"
                       dxG: "dxG"
                       dz: "drF"
@@ -70,16 +70,17 @@ mass: # finite-volume mass budget in units of kg/s
                   var: null 
                   difference: 
                       var: null 
-                      w_velocity: "WVELMASS"
-              density: 1035.
+                      w_velocity: "WVELMASS_interior"
+              density: 1029.0
               area: "rA"
-#       surface_exchange_flux:
-#         var: null
-#         product:
-#           var: null
-#           thickness_tendency: "boundary_forcing_h_tendency"
-#           density: 1035.
-#           area: "areacello"
+      surface_exchange_flux:
+        var: null
+        product:
+          var: null
+          mass_tendency_per_unit_area: "oceFWflx_3d" 
+          sign: 1.0 
+          area: "rA"
+
 #         sum:
 #           var: null
 #           rain_and_ice:
