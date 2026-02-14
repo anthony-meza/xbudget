@@ -34,7 +34,7 @@ def construct_grid(ds):
     coords = {
         "X": {"center": "i", "left": "i_g"},
         "Y": {"center": "j", "left": "j_g"},
-        "T": {"center": "time", "left": "time_bounds"},
+        "T": {"center": "time", "outer": "time_bounds"},
         "Z": {"center": "k", "left": "k_l"},
     }
     

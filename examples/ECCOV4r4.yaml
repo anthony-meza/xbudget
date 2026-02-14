@@ -4,29 +4,39 @@ mass: # finite-volume mass budget in units of kg/s
   thickness: "thkcello"
   lhs:
     var: null
-    # sum:
-    #   var: null
-    #   Eulerian_tendency:
-    #     var: null
-    #     product:
-    #       var: null
-    #       thickness_tendency:
-    #         var: null
-    #         product:
-    #           var: null
-    #           dEtan:
-    #             var: null
-    #             difference:
-    #               var: null
-    #               etan: "ETAN_bounds"
-    #           dt:
-    #             var: 1.0
-    #       density:
-    #         var: 1035.0
-    #       area:
-    #         var: "rA"
-    #       thickness:
-    #         var: "drF"
+    sum:
+      var: null
+      Eulerian_tendency:
+        var: null
+        product:
+          var: null
+          volume_tendency:
+            var: null
+            product:
+              var: null
+              free_surface_tendency:
+                var: null
+                product:
+                  var: null
+                  deta:
+                    var: null
+                    difference:
+                      var: null
+                      etan: "ETAN_bounds"
+                  dt_inv:
+                    var: null
+                    reciprocal:
+                      var: null
+                      dt:
+                        var: "dt"
+              volume: "volcello"
+              deptho_inv: 
+                var: null 
+                reciprocal: 
+                  var: null
+                  deptho: 
+                    var: "Depth"
+          density: 1029.0
   rhs:
     var: null
     sum:
