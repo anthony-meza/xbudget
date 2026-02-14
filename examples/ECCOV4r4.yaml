@@ -35,11 +35,11 @@ mass: # finite-volume mass budget in units of kg/s
         var: null
         sum:
           var: null
-          lateral_advection:
+          lateral:
             var: null
-            lateral_convergence:
+            product:
               var: null
-              product: 
+              mass_flux_convergence: #div(-Fx, -Fy) = -div(Fx, Fy) = conv(Fx, Fy)
                 var: null
                 lateral_divergence:
                   var: null
@@ -47,27 +47,29 @@ mass: # finite-volume mass budget in units of kg/s
                     var: null
                     product:
                       var: null
-                      zonal_velocity: "UVELMASS"
-                      meridional_grid_spacing: "dyG"
-                      vertical_grid_spacing: "drF"
+                      sign: -1.0
+                      density: 1035.0
+                      u_velocity: "UVELMASS"
+                      dyG: "dyG"
+                      dz: "drF"
                   Fy:
                     var: null
                     product:
                       var: null
-                      meridional_velocity: "VVELMASS"
-                      zonal_grid_spacing: "dxG"
-                      vertical_grid_spacing: "drF"
-                  density: 1035.
-                  sign: -1.0
+                      sign: -1.0
+                      density: 1035.0
+                      v_velocity: "VVELMASS"
+                      dxG: "dxG"
+                      dz: "drF"
           interfacial:
             var: null
             product:
               var: null
-              vertical_velocity_convergence: 
+              vertical_convergence: 
                   var: null 
                   difference: 
                       var: null 
-                      vertical_seawater_velocity: "WVELMASS"
+                      w_velocity: "WVELMASS"
               density: 1035.
               area: "rA"
 #       surface_exchange_flux:
