@@ -20,22 +20,14 @@ mass: # finite-volume mass budget in units of kg/s
                   var: null
                   deta:
                     var: null
-                    difference:
-                      var: null
-                      etan: "ETAN_bounds"
+                    difference: {var: null, etan: "ETAN_bounds"}
                   dt_inv:
                     var: null
-                    reciprocal:
-                      var: null
-                      dt:
-                        var: "dt"
+                    reciprocal: {var: null, dt: {var: "dt"}}
               volume: "volcello"
-              deptho_inv: 
-                var: null 
-                reciprocal: 
-                  var: null
-                  deptho: 
-                    var: "Depth"
+              deptho_inv:
+                var: null
+                reciprocal: {var: null, deptho: {var: "Depth"}}
           density: 1029.0
   rhs:
     var: null
@@ -49,328 +41,311 @@ mass: # finite-volume mass budget in units of kg/s
             var: null
             sum:
               var: null
-              mass_flux_convergence: #div(-Fx, -Fy) = -div(Fx, Fy) = conv(Fx, Fy)
+              mass_flux_convergence: # div(-Fx,-Fy) = -div(Fx,Fy)
                 var: null
-                lateral_divergence:
-                  var: null
-                  Fx:
+                product: 
+                  var: null 
+                  sign: -1.0
+                  density: 1029.0
+                  volume_flux_divergence: 
                     var: null
-                    product:
+                    lateral_divergence:
                       var: null
-                      sign: -1.0
-                      density: 1029.0
-                      u_velocity: "UVELMASS"
-                      dyG: "dyG"
-                      dz: "drF"
-                  Fy:
-                    var: null
-                    product:
-                      var: null
-                      sign: -1.0
-                      density: 1029.0
-                      v_velocity: "VVELMASS"
-                      dxG: "dxG"
-                      dz: "drF"
-                      
+                      Fx:
+                        var: null
+                        product: {var: null, u_velocity: "UVELMASS", dyG: "dyG", dz: "drF"}
+                      Fy:
+                        var: null
+                        product: {var: null, v_velocity: "VVELMASS", dxG: "dxG", dz: "drF"}
           interfacial:
             var: null
             product:
               var: null
-              vertical_convergence: 
-                  var: null 
-                  difference: 
-                      var: null 
-                      w_velocity: "WVELMASS_interior"
+              volume_flux_convergence:
+                var: null
+                difference: {var: null, w_velocity: "WVELMASS_interior"} #precomputed. WVELMESS includes freshwater fluxes
               density: 1029.0
               area: "rA"
       surface_exchange_flux:
         var: null
         product:
           var: null
-          mass_tendency_per_unit_area: "oceFWflx_3d" 
-          sign: 1.0 
+          mass_tendency_per_unit_area: "oceFWflx_3d"
+          sign: 1.0
           area: "rA"
 
-#         sum:
-#           var: null
-#           rain_and_ice:
-#             var: null
-#             product:
-#               var: null
-#               mass_tendency_per_unit_area: "prlq"
-#               area: "areacello"
-#           snow:
-#             var: null
-#             product:
-#               var: null
-#               mass_tendency_per_unit_area: "prsn"
-#               area: "areacello"
-#           evaporation:
-#             var: null
-#             product:
-#               var: null
-#               mass_tendency_per_unit_area: "evs"
-#               area: "areacello"
-#           rivers:
-#             var: null
-#             product:
-#               var: null
-#               mass_tendency_per_unit_area: "friver"
-#               area: "areacello"
-#           icebergs:
-#             var: null
-#             product:
-#               var: null
-#               mass_tendency_per_unit_area: "ficeberg"
-#               area: "areacello"
-#           sea_ice_melt:
-#             var: null
-#             product:
-#               var: null
-#               mass_tendency_per_unit_area: "fsitherm"
-#               area: "areacello"
-#           virtual_precip_restoring:
-#             var: null
-#             product:
-#               var: null
-#               mass_tendency_per_unit_area: "vprec"
-#               area: "areacello"
+heat: # finite-volume heat budget in s* in units of J/s (W)
+  lambda: "THETA"
+  lhs:
+    var: null
+    sum:
+      var: null
+      Eulerian_tendency:
+        var: null
+        product:
+          var: null
+          density: 1029.0
+          specific_heat_capacity: 3994.0
+          volume: "volcello"
+          dtheta_sstar_dt:
+            var: null
+            product:
+              var: null
+              dt_inv:
+                var: null
+                reciprocal:
+                  var: null
+                  dt:
+                    var: "dt"
+              dtheta_sstar:
+                var: null
+                difference:
+                  var: null
+                  theta_sstar:
+                    var: null
+                    product: 
+                      var: null
+                      theta: "THETA_bounds"
+                      sstar:
+                        var: null
+                        sum:
+                          var: null
+                          one: 1.0
+                          eta_over_depth:
+                            var: null
+                            product:
+                              var: null
+                              eta: "ETAN_bounds"
+                              deptho_inv:
+                                var: null
+                                reciprocal: 
+                                  var: null
+                                  deptho:
+                                    var: "Depth"
+  rhs:
+    var: null
+    sum:
+      var: null
+      advection:
+        var: null
+        sum:
+          var: null
+          lateral:
+            var: null
+            product:
+              var: null
+              density: 1029.0
+              specific_heat_capacity: 3994.0
+              heat_flux_convergence:
+                var: null
+                product:
+                  var: null
+                  heat_flux_divergence:
+                    var: null
+                    lateral_divergence:
+                      var: null
+                      Fx:
+                        var: null
+                        product: {var: null, advx_th: "ADVx_TH"}
+                      Fy:
+                        var: null
+                        product: {var: null, advy_th: "ADVy_TH"}
+                  sign: -1.0
+          interfacial:
+            var: null
+            product:
+              var: null
+              density: 1029.0
+              specific_heat_capacity: 3994.0
+              heat_flux_convergence:
+                var: null
+                difference: {var: null, advr_th: "ADVr_TH"}
+      diffusion:
+        var: null
+        sum:
+          var: null
+          lateral:
+            var: null
+            product:
+              var: null
+              density: 1029.0
+              specific_heat_capacity: 3994.0
+              explicit_heat_flux_convergence:
+                var: null
+                product:
+                  var: null
+                  heat_flux_divergence:
+                    var: null 
+                    lateral_divergence:
+                      var: null
+                      Fx:
+                        var: null
+                        product:
+                          var: null
+                          dfx_th: "DFxE_TH"
+                      Fy:
+                        var: null
+                        product:
+                          var: null
+                          dfy_th: "DFyE_TH"
+                  sign: -1.0
+          explicit_vertical_diffusion:
+            var: null
+            product:
+              var: null
+              density: 1029.0
+              specific_heat_capacity: 3994.0
+              heat_flux_convergence:
+                var: null
+                difference: {var: null, dfrE_th: "DFrE_TH"}
+          implicit_vertical_diffusion:
+            var: null
+            product:
+              var: null
+              density: 1029.0
+              specific_heat_capacity: 3994.0
+              heat_flux_convergence:
+                var: null
+                difference: {var: null, dfrI_th: "DFrI_TH"}
+                  
+      surface_exchange_flux:  # sum: #TFLUX, QFLUX, etc. includes freshwater forcing 
+        var: null
+        product:
+          var: null
+          density: 1029.0
+          specific_heat_capacity: 3994.0
+          boundary_heat_flux: "boundary_forcing_heat_tendency"  # deg C /s 
+       
+      bottom_flux:
+        var: null
+        product:
+          var: null
+          density: 1029.0
+          specific_heat_capacity: 3994.0
+          surface_heat_flux: "geothermal_heat_flux_convergence"  # deg C m^3 /s 
 
-# heat: # finite-volume heat budget in units of J/s
-#   lambda: "thetao"
-#   surface_lambda: "tos"
-#   lhs:
-#     var: null
-#     sum:
-#       var: null
-#       Eulerian_tendency:
-#         var: null
-#         product:
-#           var: null
-#           tracer_content_tendency_per_unit_area: "opottemptend"
-#           area: "areacello"
-#       advection:
-#         var: null
-#         sum:
-#           var: null
-#           lateral:
-#             var: null
-#             product:
-#               var: null
-#               sign: -1.
-#               tracer_content_tendency_per_unit_area: "T_advection_xy"
-#               area: "areacello"
-#           interfacial:
-#             var: null
-#             product:
-#               var: null
-#               sign: -1.
-#               tracer_content_tendency_per_unit_area: "Th_tendency_vert_remap"
-#               area: "areacello"
-#       surface_ocean_flux_advective_negative_lhs:
-#         var: null
-#         product:
-#           var: null
-#           sign: -1.
-#           specific_heat_capacity: 3992.
-#           lambda_mass: "tos"
-#           thickness_tendency: "boundary_forcing_h_tendency"
-#           density: 1035.
-#           area: "areacello"
-#   rhs:
-#     var: null
-#     sum:
-#       var: null
-#       diffusion:
-#         var: null
-#         sum:
-#           var: null
-#           lateral:
-#             var: null
-#             product:
-#               var: null
-#               tracer_content_tendency_per_unit_area: "opottemppmdiff"
-#               area: "areacello"
-#           interfacial:
-#             var: null
-#             product:
-#               var: null
-#               tracer_content_tendency_per_unit_area: "opottempdiff"
-#               area: "areacello"
-            
-#       surface_exchange_flux:
-#         var:
-#         product:
-#           var: null
-#           tracer_content_tendency_per_unit_area: "boundary_forcing_heat_tendency"
-#           area: "areacello"
-#         sum:
-#           var: null
-#           nonadvective:
-#             var: null
-#             sum:
-#               var: null # This sum is currently broken because the shortwave terms are 3D while the other terms are 2D!
-#               latent:
-#                 var: null
-#                 product:
-#                   var: null
-#                   tracer_content_tendency_per_unit_area: "hflso"
-#                   area: "areacello"
-#               sensible:
-#                 var: null
-#                 product:
-#                   var: null
-#                   tracer_content_tendency_per_unit_area: "hfsso"
-#                   area: "areacello"
-#               longwave:
-#                 var: null
-#                 product:
-#                   var: null
-#                   tracer_content_tendency_per_unit_area: "rlntds"
-#                   area: "areacello"
-#               shortwave:
-#                 var: null
-#                 product:
-#                   var: null
-#                   tracer_content_tendency_per_unit_area: "rsdoabsorb"
-#                   area: "areacello"
-#                 # Not yet supported!
-#                 #var: "rsdoabsorb"
-#                 #finite_difference:
-#                 #  Z: "rsdo"
-#           advective:
-#             var: null
-#             product:
-#               var: null
-#               tracer_content_tendency_per_unit_area: "heat_content_surfwater"
-#               area: "areacello"
-#             #Alternative method:
-#             #product:
-#             #  var: null
-#             #  specific_heat_capacity: 3992.
-#             #  lambda_mass: "tos"
-#             #  thickness_tendency: "boundary_forcing_h_tendency"
-#             #  density: 1035.
-#             #  area: "areacello"
-#       surface_ocean_flux_advective_negative_rhs:
-#         var: null
-#         product:
-#           var: null
-#           sign: -1.
-#           specific_heat_capacity: 3992.
-#           lambda_mass: "tos"
-#           thickness_tendency: "boundary_forcing_h_tendency"
-#           density: 1035.
-#           area: "areacello"
-#       bottom_flux:
-#         var: null
-#         product:
-#           var: null
-#           tracer_content_tendency_per_unit_area: "internal_heat_heat_tendency"
-#           area: "areacello"
-#       frazil_ice:
-#         var: null
-#         product:
-#           var: null
-#           tracer_content_tendency_per_unit_area: "frazil_heat_tendency"
-#           area: "areacello"
 
-# salt: # finite-volume salt budget in units of kg/s
-#   lambda: "so"
-#   surface_lambda: "sos"
-#   lhs:
-#     var: null
-#     sum:
-#       var: null
-#       Eulerian_tendency:
-#         var: null
-#         product:
-#           var: null
-#           tracer_content_tendency_per_unit_area: "osalttend"
-#           area: "areacello"
-#       advection:
-#         var: null
-#         sum:
-#           var: null
-#           lateral:
-#             var: null
-#             product:
-#               var: null
-#               sign: -1.
-#               tracer_content_tendency_per_unit_area: "S_advection_xy"
-#               area: "areacello"
-#           interfacial:
-#             var: null
-#             product:
-#               var: null
-#               sign: -1.
-#               tracer_content_tendency_per_unit_area: "Sh_tendency_vert_remap"
-#               area: "areacello"
-#       surface_ocean_flux_advective_negative_lhs:
-#         var: null
-#         product:
-#           var: null
-#           sign: -1.
-#           unit_conversion: 0.001
-#           lambda_mass: "sos"
-#           thickness_tendency: "boundary_forcing_h_tendency"
-#           density: 1035.
-#           area: "areacello"
-      
-#   rhs:
-#     var: null
-#     sum:
-#       var: null
-#       diffusion:
-#         var: null
-#         sum:
-#           var: null
-#           lateral:
-#             var: null
-#             product:
-#               var: null
-#               tracer_content_tendency_per_unit_area: "osaltpmdiff"
-#               area: "areacello"
-#           interfacial:
-#             var: null
-#             product:
-#               var: null
-#               tracer_content_tendency_per_unit_area: "osaltdiff"
-#               area: "areacello"
-#       surface_exchange_flux:
-#         var:
-#         product:
-#           var: null
-#           tracer_content_tendency_per_unit_area: "boundary_forcing_salt_tendency"
-#           area: "areacello"
-#         sum:
-#           var: null
-#           nonadvective:
-#             var: null
-#             sum:
-#               var: null
-#               basal:
-#                 var: null
-#                 product:
-#                   var: null
-#                   tracer_content_tendency_per_unit_area: "sfdsi"
-#                   area: "areacello"
-#           advective:
-#             var: null
-#             product:
-#               var: null
-#               unit_conversion: 0.001
-#               lambda_mass: 0.
-#               thickness_tendency: "boundary_forcing_h_tendency"
-#               density: 1035.
-#               area: "areacello"
-#       surface_ocean_flux_advective_negative_rhs:
-#         var: null
-#         product:
-#           var: null
-#           sign: -1.
-#           unit_conversion: 0.001
-#           lambda_mass: "sos"
-#           thickness_tendency: "boundary_forcing_h_tendency"
-#           density: 1035.
-#           area: "areacello"
+salt: # finite-volume salt-content budget in units of kg/s  (salt mass, not salinity)
+  # Salt content per cell:  ρ * V * (s* SALT) * 1e-3   since SALT is in psu ~ g/kg
+  lambda: "SALT"
+  lhs:
+    var: null
+    sum:
+      var: null
+      Eulerian_tendency:
+        var: null
+        product:
+          var: null
+          density: 1029.0
+          volume: "volcello"
+          unit_conversion_psu_to_kgkg: 0.001
+          dsstarSALT_dt:
+            var: null
+            product:
+              var: null
+              dt_inv:
+                var: null
+                reciprocal: {var: null, dt: {var: "dt"}}
+              dsstarSALT:
+                var: null
+                difference:
+                  var: null
+                  sstarSALT:
+                    var: null
+                    product:
+                      var: null
+                      SALT: "SALT_bounds"
+                      sstar:
+                        var: null
+                        sum:
+                          var: null
+                          one: 1.0
+                          eta_over_depth:
+                            var: null
+                            product:
+                              var: null
+                              eta: "ETAN_bounds"
+                              deptho_inv:
+                                var: null
+                                reciprocal: {var: null, deptho: {var: "Depth"}}
+
+  rhs:
+    var: null
+    sum:
+      var: null
+
+      advection: # -ρ * 1e-3 * [ d/dx(ADVx_SLT) + d/dy(ADVy_SLT) + d/dz(ADVr_SLT) ]
+        var: null
+        sum:
+          var: null
+
+          lateral:
+            var: null
+            product:
+              var: null
+              density: 1029.0
+              unit_conversion_psu_to_kgkg: 0.001
+              sign: -1.0
+              salt_flux_divergence:
+                var: null
+                lateral_divergence:
+                  var: null
+                  Fx: {var: null, product: {var: null, advx_slt: "ADVx_SLT"}}
+                  Fy: {var: null, product: {var: null, advy_slt: "ADVy_SLT"}}
+
+          interfacial:
+            var: null
+            product:
+              var: null
+              density: 1029.0
+              unit_conversion_psu_to_kgkg: 0.001
+              salt_flux_convergence:
+                var: null
+                difference: {var: null, advr_slt: "ADVr_SLT"}
+
+      diffusion: # -ρ * 1e-3 * [ d/dx(DFxE_SLT) + d/dy(DFyE_SLT) ] + ρ*1e-3*d/dz(DFrE_SLT + DFrI_SLT)
+        var: null
+        sum:
+          var: null
+
+          lateral:
+            var: null
+            product:
+              var: null
+              density: 1029.0
+              unit_conversion_psu_to_kgkg: 0.001
+              sign: -1.0
+              salt_flux_divergence:
+                var: null
+                lateral_divergence:
+                  var: null
+                  Fx: {var: null, product: {var: null, dfxe_slt: "DFxE_SLT"}}
+                  Fy: {var: null, product: {var: null, dfye_slt: "DFyE_SLT"}}
+
+          explicit_vertical_diffusion:
+            var: null
+            product:
+              var: null
+              density: 1029.0
+              unit_conversion_psu_to_kgkg: 0.001
+              salt_flux_convergence:
+                var: null
+                difference: {var: null, dfrE_slt: "DFrE_SLT"}
+
+          implicit_vertical_diffusion:
+            var: null
+            product:
+              var: null
+              density: 1029.0
+              unit_conversion_psu_to_kgkg: 0.001
+              salt_flux_convergence:
+                var: null
+                difference: {var: null, dfrI_slt: "DFrI_SLT"}
+
+      surface_exchange_flux: # (SFLUX + oceSPtnd at k=0; oceSPtnd below) in g/m^2/s, mapped to kg/s
+        var: null
+        product:
+          var: null
+          unit_conversion_g_to_kg: 0.001
+          area: "rA"
+          salt_forcing_per_unit_area: "forcS_3d"

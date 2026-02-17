@@ -327,7 +327,11 @@ def budget_fill_dict(data, xbudget_dict, namepath):
                     for pos,c in ax.coords.items()
                     if pos!="center"
                 }
+                
                 v_term = [v_term for k_term,v_term in v.items() if k_term!="var"][0]
+                if isinstance(v_term, dict):
+                    v_term = budget_fill_dict(data, v_term, f"{namepath}_difference_operand").name
+
                 if v_term not in ds:
                     warnings.warn(f"Variable {v_term} is missing from the dataset `ds`, so it is being skipped. To suppress this warning, remove {v_term} from the `xbudget_dict`.")
                     continue
