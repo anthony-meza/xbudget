@@ -53,6 +53,7 @@ def construct_grid(ds):
         coords=coords,
         metrics=metrics,
         boundary=boundary,
+        periodic = False,
         fill_value=fill_value,
         face_connections=face_connections,
         autoparse_metadata=False,
