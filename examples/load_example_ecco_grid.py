@@ -60,7 +60,7 @@ def construct_grid(ds):
     coords = {
         "X": {"center": "i", "left": "i_g"},
         "Y": {"center": "j", "left": "j_g"},
-        "T": {"center": "time", "outer": "time_bounds"},
+        # "T": {"center": "time", "outer": "time_bounds"},
         "Z": {"center": "k", "left": "k_l"},
     }
     
@@ -76,12 +76,7 @@ def construct_grid(ds):
 
     grid = xgcm.Grid(
         ds,
-        coords=coords,
-        metrics=metrics,
-        boundary=boundary,
         periodic = False,
-        fill_value=fill_value,
         face_connections=face_connections,
-        autoparse_metadata=False,
     )
     return grid
