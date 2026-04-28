@@ -61,7 +61,7 @@ def construct_grid(ds):
         "X": {"center": "i", "left": "i_g"},
         "Y": {"center": "j", "left": "j_g"},
         # "T": {"center": "time", "outer": "time_bounds"},
-        "Z": {"center": "k", "left": "k_l"},
+        "Z": {"center": "k", "left": "k_l", "outer": "k_p1"},
     }
     
     metrics = {
@@ -71,12 +71,15 @@ def construct_grid(ds):
         ("X", "Y"): ["rA", "rAw", "rAs"],            # horizontal areas (cell center, west-face, south-face)
     }
 
-    boundary = {"X":None, "Y":None, "Z": "fill", "T":None}
-    fill_value = {"Z": 0.0}
+    boundary = {"X":None, "Y":None, "Z": "extend"}#, "T":None}
 
     grid = xgcm.Grid(
         ds,
+        coords = coords, 
+        metrics = metrics, 
         periodic = False,
+        boundary = boundary, 
         face_connections=face_connections,
+        autoparse_metadata = False
     )
     return grid
