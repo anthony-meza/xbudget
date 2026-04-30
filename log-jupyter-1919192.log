@@ -1,0 +1,415 @@
+
+For more info and how to connect from windows,
+see https://docs.ycrc.yale.edu/clusters-at-yale/guides/jupyter/
+MacOS or linux terminal command to create your ssh tunnel
+ssh -N -f -L 8682:pn028:8682 anthony.meza@poseidon.whoi.edu
+Windows MobaXterm info
+Forwarded port:same as remote port Remote server: pn028
+Remote port: 8682
+SSH server: poseidon.whoi.edu
+SSHlogin: anthony.meza
+SSH port: 22
+Use a Browser on your local machine to go to: localhost:8682 (prefix w/ https:// if using password) 
+[W 2026-04-28 18:30:41.186 ServerApp] jupyter_resource_usage | error adding extension (enabled: True): The module 'jupyter_resource_usage' could not be found (No module named 'jupyter_resource_usage'). Are you sure the extension is installed?
+    Traceback (most recent call last):
+      File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server/extension/manager.py", line 365, in add_extension
+        extpkg = ExtensionPackage(name=extension_name, enabled=enabled)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server/extension/manager.py", line 219, in __init__
+        self._load_metadata()
+      File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server/extension/manager.py", line 234, in _load_metadata
+        raise ExtensionModuleNotFound(msg) from None
+    jupyter_server.extension.utils.ExtensionModuleNotFound: The module 'jupyter_resource_usage' could not be found (No module named 'jupyter_resource_usage'). Are you sure the extension is installed?
+[I 2026-04-28 18:30:41.290 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2026-04-28 18:30:41.304 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2026-04-28 18:30:41.326 ServerApp] jupyterlab | extension was successfully linked.
+[W 2026-04-28 18:30:43.833 ServerApp] jupyter_nbextensions_configurator | error adding extension (enabled: True): The module 'jupyter_nbextensions_configurator' could not be found (No module named 'jupyter_nbextensions_configurator'). Are you sure the extension is installed?
+    Traceback (most recent call last):
+      File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server/extension/manager.py", line 365, in add_extension
+        extpkg = ExtensionPackage(name=extension_name, enabled=enabled)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server/extension/manager.py", line 219, in __init__
+        self._load_metadata()
+      File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server/extension/manager.py", line 234, in _load_metadata
+        raise ExtensionModuleNotFound(msg) from None
+    jupyter_server.extension.utils.ExtensionModuleNotFound: The module 'jupyter_nbextensions_configurator' could not be found (No module named 'jupyter_nbextensions_configurator'). Are you sure the extension is installed?
+[W 2026-04-28 18:30:43.835 ServerApp] jupyter_resource_usage | error adding extension (enabled: True): The module 'jupyter_resource_usage' could not be found (No module named 'jupyter_resource_usage'). Are you sure the extension is installed?
+    Traceback (most recent call last):
+      File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server/extension/manager.py", line 365, in add_extension
+        extpkg = ExtensionPackage(name=extension_name, enabled=enabled)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server/extension/manager.py", line 219, in __init__
+        self._load_metadata()
+      File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server/extension/manager.py", line 234, in _load_metadata
+        raise ExtensionModuleNotFound(msg) from None
+    jupyter_server.extension.utils.ExtensionModuleNotFound: The module 'jupyter_resource_usage' could not be found (No module named 'jupyter_resource_usage'). Are you sure the extension is installed?
+[I 2026-04-28 18:30:43.835 ServerApp] notebook_shim | extension was successfully linked.
+[I 2026-04-28 18:30:44.025 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2026-04-28 18:30:44.031 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2026-04-28 18:30:44.033 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2026-04-28 18:30:44.073 LabApp] JupyterLab extension loaded from /vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyterlab
+[I 2026-04-28 18:30:44.073 LabApp] JupyterLab application directory is /vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/share/jupyter/lab
+[I 2026-04-28 18:30:44.076 LabApp] Extension Manager is 'pypi'.
+[I 2026-04-28 18:30:44.460 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2026-04-28 18:30:44.461 ServerApp] Serving notebooks from local directory: /vortexfs1/home/anthony.meza/xbudget
+[I 2026-04-28 18:30:44.462 ServerApp] Jupyter Server 2.17.0 is running at:
+[I 2026-04-28 18:30:44.462 ServerApp] http://pn028:8682/lab?token=fe5a2bcddb08a3c1121664174084950e66cf3feadf18b324
+[I 2026-04-28 18:30:44.462 ServerApp]     http://127.0.0.1:8682/lab?token=fe5a2bcddb08a3c1121664174084950e66cf3feadf18b324
+[I 2026-04-28 18:30:44.462 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2026-04-28 18:30:44.488 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///vortexfs1/home/anthony.meza/.local/share/jupyter/runtime/jpserver-44035-open.html
+    Or copy and paste one of these URLs:
+        http://pn028:8682/lab?token=fe5a2bcddb08a3c1121664174084950e66cf3feadf18b324
+        http://127.0.0.1:8682/lab?token=fe5a2bcddb08a3c1121664174084950e66cf3feadf18b324
+[I 2026-04-28 18:30:44.757 ServerApp] Skipped non-installed server(s): basedpyright, bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyrefly, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2026-04-28 18:30:55.111 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2026-04-28 18:30:55.301 ServerApp] 404 GET /api/metrics/v1?1777415455135 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 105.96ms referer=http://127.0.0.1:8682/lab
+[W 2026-04-28 18:30:55.462 ServerApp] 404 GET /api/contents/ECCOV4r4_budget_terms_example.ipynb?content=0&hash=0&1777415455436 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 5.54ms referer=http://127.0.0.1:8682/lab
+[W 2026-04-28 18:30:55.462 ServerApp] 404 GET /api/contents/ECCOV4r4_budget_terms_example.ipynb?content=0&hash=0&1777415455436 (10.141.0.12): No such file or directory: ECCOV4r4_budget_terms_example.ipynb
+[W 2026-04-28 18:30:55.465 ServerApp] 404 GET /api/contents/log-jupyter-1919126.log?content=0&hash=0&1777415455436 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 7.94ms referer=http://127.0.0.1:8682/lab
+[W 2026-04-28 18:30:55.465 ServerApp] 404 GET /api/contents/log-jupyter-1919126.log?content=0&hash=0&1777415455436 (10.141.0.12): No such file or directory: log-jupyter-1919126.log
+[W 2026-04-28 18:30:55.470 ServerApp] 404 GET /api/contents/environment.yml?content=0&hash=0&1777415455436 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 3.30ms referer=http://127.0.0.1:8682/lab
+[W 2026-04-28 18:30:55.470 ServerApp] 404 GET /api/contents/environment.yml?content=0&hash=0&1777415455436 (10.141.0.12): No such file or directory: environment.yml
+[W 2026-04-28 18:30:55.476 ServerApp] 404 GET /api/contents/log-jupyter-1919125.log?content=0&hash=0&1777415455436 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.08ms referer=http://127.0.0.1:8682/lab
+[W 2026-04-28 18:30:55.476 ServerApp] 404 GET /api/contents/log-jupyter-1919125.log?content=0&hash=0&1777415455436 (10.141.0.12): No such file or directory: log-jupyter-1919125.log
+[W 2026-04-28 18:30:55.477 ServerApp] 404 GET /api/contents/environment.yml?content=0&hash=0&1777415455436 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.72ms referer=http://127.0.0.1:8682/lab
+[W 2026-04-28 18:30:55.477 ServerApp] 404 GET /api/contents/environment.yml?content=0&hash=0&1777415455436 (10.141.0.12): No such file or directory: environment.yml
+[W 2026-04-28 18:30:55.479 ServerApp] 404 GET /api/contents/ECCOV4r4_budget_terms_example.ipynb?content=0&hash=0&1777415455437 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 1.45ms referer=http://127.0.0.1:8682/lab
+[W 2026-04-28 18:30:55.480 ServerApp] 404 GET /api/contents/ECCOV4r4_budget_terms_example.ipynb?content=0&hash=0&1777415455437 (10.141.0.12): No such file or directory: ECCOV4r4_budget_terms_example.ipynb
+[W 2026-04-28 18:30:55.483 ServerApp] 404 GET /api/contents/log-jupyter-1919126.log?content=0&hash=0&1777415455437 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 1.10ms referer=http://127.0.0.1:8682/lab
+[W 2026-04-28 18:30:55.483 ServerApp] 404 GET /api/contents/log-jupyter-1919126.log?content=0&hash=0&1777415455437 (10.141.0.12): No such file or directory: log-jupyter-1919126.log
+[W 2026-04-28 18:30:55.494 ServerApp] 404 GET /api/contents/log-jupyter-1919125.log?content=0&hash=0&1777415455437 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 3.65ms referer=http://127.0.0.1:8682/lab
+[W 2026-04-28 18:30:55.494 ServerApp] 404 GET /api/contents/log-jupyter-1919125.log?content=0&hash=0&1777415455437 (10.141.0.12): No such file or directory: log-jupyter-1919125.log
+[W 2026-04-28 18:30:56.563 ServerApp] 404 GET /api/metrics/v1?1777415456545 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.10ms referer=http://127.0.0.1:8682/lab
+[W 2026-04-28 18:31:01.038 ServerApp] 404 GET /api/metrics/v1?1777415461012 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 6.69ms referer=http://127.0.0.1:8682/lab/tree/README.md
+[W 2026-04-28 18:31:04.263 ServerApp] Notebook examples/eccov4r4_budget_example_mask.ipynb is not trusted
+[I 2026-04-28 18:31:04.548 ServerApp] Kernel started: 3f6ca787-22f2-42b1-8320-789fe9577dbb
+[W 2026-04-28 18:31:06.348 ServerApp] 404 GET /api/metrics/v1?1777415466328 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 5.90ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_mask.ipynb
+[I 2026-04-28 18:31:08.867 ServerApp] Adapting from protocol version 5.3 (kernel 3f6ca787-22f2-42b1-8320-789fe9577dbb) to 5.4 (client).
+[I 2026-04-28 18:31:08.873 ServerApp] Connecting to kernel 3f6ca787-22f2-42b1-8320-789fe9577dbb.
+[W 2026-04-28 18:31:08.876 ServerApp] The websocket_ping_timeout (90000) cannot be longer than the websocket_ping_interval (30000).
+    Setting websocket_ping_timeout=30000
+[I 2026-04-28 18:31:08.921 ServerApp] Adapting from protocol version 5.3 (kernel 3f6ca787-22f2-42b1-8320-789fe9577dbb) to 5.4 (client).
+[I 2026-04-28 18:31:08.923 ServerApp] Connecting to kernel 3f6ca787-22f2-42b1-8320-789fe9577dbb.
+[I 2026-04-28 18:31:08.958 ServerApp] Adapting from protocol version 5.3 (kernel 3f6ca787-22f2-42b1-8320-789fe9577dbb) to 5.4 (client).
+[I 2026-04-28 18:31:08.959 ServerApp] Connecting to kernel 3f6ca787-22f2-42b1-8320-789fe9577dbb.
+[I 2026-04-28 18:31:10.427 ServerApp] Saving file at /examples/eccov4r4_budget_example_mask.ipynb
+[W 2026-04-28 18:31:13.413 ServerApp] 404 GET /api/metrics/v1?1777415473391 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 9.01ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_mask.ipynb
+[W 2026-04-28 18:31:28.482 ServerApp] 404 GET /api/metrics/v1?1777415488455 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 9.07ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_mask.ipynb
+[W 2026-04-28 18:31:51.169 ServerApp] 404 GET /api/metrics/v1?1777415511145 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 8.72ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_mask.ipynb
+[W 2026-04-28 18:32:21.191 ServerApp] 404 GET /api/metrics/v1?1777415541168 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 8.00ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_mask.ipynb
+[I 2026-04-28 18:32:32.366 ServerApp] Kernel started: 170dbd3f-ea5d-4eaa-941e-5d165bb8f5b2
+[I 2026-04-28 18:32:32.370 ServerApp] Kernel shutdown: 3f6ca787-22f2-42b1-8320-789fe9577dbb
+[I 2026-04-28 18:32:37.897 ServerApp] Adapting from protocol version 5.3 (kernel 170dbd3f-ea5d-4eaa-941e-5d165bb8f5b2) to 5.4 (client).
+[I 2026-04-28 18:32:37.900 ServerApp] Connecting to kernel 170dbd3f-ea5d-4eaa-941e-5d165bb8f5b2.
+[I 2026-04-28 18:32:37.959 ServerApp] Adapting from protocol version 5.3 (kernel 170dbd3f-ea5d-4eaa-941e-5d165bb8f5b2) to 5.4 (client).
+[I 2026-04-28 18:32:37.959 ServerApp] Connecting to kernel 170dbd3f-ea5d-4eaa-941e-5d165bb8f5b2.
+[W 2026-04-28 18:32:51.214 ServerApp] 404 GET /api/metrics/v1?1777415571190 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 7.08ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_mask.ipynb
+[I 2026-04-28 18:33:03.965 ServerApp] Kernel started: d876af14-3925-4ea0-bbad-c3f315599f96
+[I 2026-04-28 18:33:03.968 ServerApp] Kernel shutdown: 170dbd3f-ea5d-4eaa-941e-5d165bb8f5b2
+[I 2026-04-28 18:33:07.622 ServerApp] Adapting from protocol version 5.3 (kernel d876af14-3925-4ea0-bbad-c3f315599f96) to 5.4 (client).
+[I 2026-04-28 18:33:07.625 ServerApp] Connecting to kernel d876af14-3925-4ea0-bbad-c3f315599f96.
+[W 2026-04-28 18:33:09.897 ServerApp] 404 GET /api/metrics/v1?1777415589875 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 6.41ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_mask.ipynb
+[I 2026-04-28 18:33:11.105 ServerApp] Saving file at /examples/eccov4r4_budget_example_mask.ipynb
+[W 2026-04-28 18:33:34.668 ServerApp] 404 GET /api/metrics/v1?1777415614646 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 6.55ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_mask.ipynb
+[I 2026-04-28 18:33:52.163 ServerApp] Saving file at /examples/eccov4r4_budget_example_mask.ipynb
+[W 2026-04-28 18:34:04.688 ServerApp] 404 GET /api/metrics/v1?1777415644666 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 8.01ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_mask.ipynb
+[I 2026-04-28 18:34:07.583 ServerApp] Copying 'examples/eccov4r4_budget_example_mask.ipynb' to '/examples'
+[W 2026-04-28 18:34:12.930 ServerApp] 404 GET /api/metrics/v1?1777415652911 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 5.88ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_mask.ipynb
+[W 2026-04-28 18:34:27.903 ServerApp] 404 GET /api/metrics/v1?1777415667881 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.00ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_mask.ipynb
+[W 2026-04-28 18:34:42.887 ServerApp] 404 GET /api/metrics/v1?1777415682865 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 3.97ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_mask.ipynb
+[W 2026-04-28 18:34:52.731 ServerApp] 404 GET /api/metrics/v1?1777415692711 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.88ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_mask.ipynb
+[W 2026-04-28 18:35:01.523 ServerApp] 404 GET /api/metrics/v1?1777415701505 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.20ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_mask.ipynb
+[I 2026-04-28 18:35:18.814 ServerApp] Kernel started: e7a61eb3-2edf-42e5-a14d-4ba104d27d4c
+[I 2026-04-28 18:35:21.638 ServerApp] Adapting from protocol version 5.3 (kernel e7a61eb3-2edf-42e5-a14d-4ba104d27d4c) to 5.4 (client).
+[I 2026-04-28 18:35:21.640 ServerApp] Connecting to kernel e7a61eb3-2edf-42e5-a14d-4ba104d27d4c.
+[W 2026-04-28 18:35:25.683 ServerApp] 404 GET /api/metrics/v1?1777415725661 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 6.82ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:35:45.044 ServerApp] 404 GET /api/metrics/v1?1777415745026 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.00ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:35:49.999 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:35:52.685 ServerApp] Saving file at /examples/eccov4r4_budget_example_mask.ipynb
+ERROR 1: PROJ: proj_create_from_database: Open of /vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/share/proj failed
+[I 2026-04-28 18:35:57.523 ServerApp] Saving file at /examples/eccov4r4_budget_example_mask.ipynb
+[I 2026-04-28 18:36:00.179 ServerApp] Saving file at /examples/eccov4r4_budget_example_mask.ipynb
+[W 2026-04-28 18:36:15.065 ServerApp] 404 GET /api/metrics/v1?1777415775042 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 5.01ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_mask.ipynb
+[W 2026-04-28 18:36:22.237 ServerApp] Notebook examples/eccov4r4_budget_examples_isopycnal_overturning.ipynb is not trusted
+[I 2026-04-28 18:36:22.440 ServerApp] Kernel started: 038e1536-3174-48a3-9690-b8e92da8ada3
+[I 2026-04-28 18:36:25.019 ServerApp] Adapting from protocol version 5.3 (kernel 038e1536-3174-48a3-9690-b8e92da8ada3) to 5.4 (client).
+[I 2026-04-28 18:36:25.021 ServerApp] Connecting to kernel 038e1536-3174-48a3-9690-b8e92da8ada3.
+[I 2026-04-28 18:36:39.895 ServerApp] Saving file at /examples/eccov4r4_budget_example_mask.ipynb
+[I 2026-04-28 18:36:43.379 ServerApp] Kernel shutdown: d876af14-3925-4ea0-bbad-c3f315599f96
+[I 2026-04-28 18:36:43.384 ServerApp] Kernel shutdown: e7a61eb3-2edf-42e5-a14d-4ba104d27d4c
+[I 2026-04-28 18:36:43.385 ServerApp] Kernel shutdown: 038e1536-3174-48a3-9690-b8e92da8ada3
+[W 2026-04-28 18:36:45.089 ServerApp] 404 GET /api/metrics/v1?1777415805064 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 6.69ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_examples_isopycnal_overturning.ipynb
+[I 2026-04-28 18:36:51.507 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:36:52.068 ServerApp] Kernel started: 63c3a576-355e-43a7-86cb-b36640a0f09c
+[I 2026-04-28 18:36:54.212 ServerApp] Adapting from protocol version 5.3 (kernel 63c3a576-355e-43a7-86cb-b36640a0f09c) to 5.4 (client).
+[I 2026-04-28 18:36:54.214 ServerApp] Connecting to kernel 63c3a576-355e-43a7-86cb-b36640a0f09c.
+[W 2026-04-28 18:37:00.298 ServerApp] 404 GET /api/metrics/v1?1777415820280 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.02ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:37:00.780 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+ERROR 1: PROJ: proj_create_from_database: Open of /vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/share/proj failed
+[W 2026-04-28 18:37:08.727 ServerApp] 404 GET /api/metrics/v1?1777415828708 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.64ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:37:16.811 ServerApp] Kernel interrupted: 63c3a576-355e-43a7-86cb-b36640a0f09c
+[I 2026-04-28 18:37:16.967 ServerApp] Kernel interrupted: 63c3a576-355e-43a7-86cb-b36640a0f09c
+[W 2026-04-28 18:37:26.023 ServerApp] 404 GET /api/metrics/v1?1777415846003 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 5.68ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:37:56.043 ServerApp] 404 GET /api/metrics/v1?1777415876021 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 8.63ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_examples_isopycnal_overturning.ipynb
+[I 2026-04-28 18:38:22.304 ServerApp] Saving file at /examples/eccov4r4_budget_examples_isopycnal_overturning.ipynb
+[W 2026-04-28 18:38:22.305 ServerApp] Notebook examples/eccov4r4_budget_examples_isopycnal_overturning.ipynb is not trusted
+[W 2026-04-28 18:38:26.069 ServerApp] 404 GET /api/metrics/v1?1777415906042 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 6.74ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:38:56.090 ServerApp] 404 GET /api/metrics/v1?1777415936068 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 8.25ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:38:59.609 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:39:25.191 ServerApp] 404 GET /api/metrics/v1?1777415965173 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 3.96ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:39:55.211 ServerApp] 404 GET /api/metrics/v1?1777415995189 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.52ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:40:25.234 ServerApp] 404 GET /api/metrics/v1?1777416025209 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 7.99ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:40:41.667 ServerApp] 404 GET /api/metrics/v1?1777416041648 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.06ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:40:49.985 ServerApp] 404 GET /api/metrics/v1?1777416049967 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 3.91ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:40:56.943 ServerApp] 404 GET /api/example-ECCOV4r4-budget-terms/data/ECCO_transport_terms.zarr?content=0&hash=0&1777416056925 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.76ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:41:00.397 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:41:05.399 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:41:13.814 ServerApp] 404 GET /api/metrics/v1?1777416073792 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 3.98ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:41:27.372 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:41:27.899 ServerApp] 404 GET /api/metrics/v1?1777416087383 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 13.73ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:41:28.596 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:41:39.367 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:41:58.025 ServerApp] 404 GET /api/metrics/v1?1777416118002 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.79ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:41:58.109 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:42:28.043 ServerApp] 404 GET /api/metrics/v1?1777416148023 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 6.15ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:42:32.941 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:42:50.850 ServerApp] 404 GET /api/metrics/v1?1777416170834 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 3.42ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_examples_isopycnal_overturning.ipynb
+[W 2026-04-28 18:43:00.885 ServerApp] 404 GET /api/metrics/v1?1777416180863 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.82ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:43:03.945 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:43:19.075 ServerApp] 404 GET /api/metrics/v1?1777416199055 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 3.99ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:43:32.972 ServerApp] 404 GET /api/metrics/v1?1777416212953 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 5.99ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:44:01.995 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:44:02.994 ServerApp] 404 GET /api/metrics/v1?1777416242973 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 5.13ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:44:26.063 ServerApp] 404 GET /api/metrics/v1?1777416266044 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 3.96ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:44:32.183 ServerApp] Kernel shutdown: 63c3a576-355e-43a7-86cb-b36640a0f09c
+[I 2026-04-28 18:44:35.657 ServerApp] Kernel started: 9ad01bcd-fd89-457f-864a-c61a010270bb
+[I 2026-04-28 18:44:38.459 ServerApp] Adapting from protocol version 5.3 (kernel 9ad01bcd-fd89-457f-864a-c61a010270bb) to 5.4 (client).
+[I 2026-04-28 18:44:38.461 ServerApp] Connecting to kernel 9ad01bcd-fd89-457f-864a-c61a010270bb.
+[W 2026-04-28 18:44:42.611 ServerApp] 404 GET /api/metrics/v1?1777416282586 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 6.46ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+ERROR 1: PROJ: proj_create_from_database: Open of /vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/share/proj failed
+[W 2026-04-28 18:45:03.075 ServerApp] 404 GET /api/metrics/v1?1777416303053 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.67ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:45:18.944 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:45:27.433 ServerApp] 404 GET /api/metrics/v1?1777416327415 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.26ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:45:50.737 ServerApp] 404 GET /api/metrics/v1?1777416350714 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 6.08ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:46:15.149 ServerApp] 404 GET /api/metrics/v1?1777416375130 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 5.25ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:46:23.019 ServerApp] 404 GET /api/metrics/v1?1777416383000 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 3.99ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:46:43.568 ServerApp] 404 GET /api/metrics/v1?1777416403550 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.28ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:46:59.978 ServerApp] 404 GET /api/metrics/v1?1777416419953 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 8.29ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_examples_isopycnal_overturning.ipynb
+[W 2026-04-28 18:47:11.177 ServerApp] 404 GET /api/metrics/v1?1777416431159 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.21ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:47:19.512 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:47:41.469 ServerApp] 404 GET /api/metrics/v1?1777416461450 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.83ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:47:47.724 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:47:48.225 ServerApp] 404 GET /api/metrics/v1?1777416468205 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.12ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:48:03.856 ServerApp] 404 GET /api/metrics/v1?1777416483834 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 6.72ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:48:36.488 ServerApp] 404 GET /api/metrics/v1?1777416516457 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 3.99ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:48:43.985 ServerApp] 404 GET /api/metrics/v1?1777416523963 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.61ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:48:44.931 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:48:53.768 ServerApp] 404 GET /api/metrics/v1?1777416533747 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 3.92ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:49:05.399 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:49:13.413 ServerApp] 404 GET /api/metrics/v1?1777416553393 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 5.87ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:49:43.435 ServerApp] 404 GET /api/metrics/v1?1777416583414 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 3.91ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:50:00.535 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:50:13.458 ServerApp] 404 GET /api/metrics/v1?1777416613434 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 10.01ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_examples_isopycnal_overturning.ipynb
+[W 2026-04-28 18:50:24.355 ServerApp] 404 GET /api/metrics/v1?1777416624337 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 3.91ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_examples_isopycnal_overturning.ipynb
+[W 2026-04-28 18:50:30.598 ServerApp] 404 GET /api/metrics/v1?1777416630579 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 3.85ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_examples_isopycnal_overturning.ipynb
+[W 2026-04-28 18:50:42.410 ServerApp] 404 GET /api/metrics/v1?1777416642393 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 3.89ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_examples_isopycnal_overturning.ipynb
+[W 2026-04-28 18:51:00.640 ServerApp] 404 GET /api/metrics/v1?1777416660623 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 3.90ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_examples_isopycnal_overturning.ipynb
+[I 2026-04-28 18:51:19.595 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:51:20.317 ServerApp] 404 GET /api/metrics/v1?1777416680294 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 8.62ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:51:45.085 ServerApp] 404 GET /api/metrics/v1?1777416705063 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 3.92ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:52:15.104 ServerApp] 404 GET /api/metrics/v1?1777416735083 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.05ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:52:56.476 ServerApp] 404 GET /api/metrics/v1?1777416776452 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 7.37ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:53:06.218 ServerApp] 404 GET /api/metrics/v1?1777416786200 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 3.96ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:53:14.557 ServerApp] 404 GET /api/metrics/v1?1777416794539 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 3.85ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:53:17.490 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:53:20.926 ServerApp] 404 GET /api/metrics/v1?1777416800907 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.09ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:53:33.734 ServerApp] 404 GET /api/metrics/v1?1777416813714 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 3.79ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:54:03.757 ServerApp] 404 GET /api/metrics/v1?1777416843733 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 6.54ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:54:13.586 ServerApp] 404 GET /api/metrics/v1?1777416853568 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 3.89ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:54:38.949 ServerApp] 404 GET /api/metrics/v1?1777416878932 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.03ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:54:51.263 ServerApp] 404 GET /api/metrics/v1?1777416891241 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 3.98ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:55:09.460 ServerApp] 404 GET /api/metrics/v1?1777416909437 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 7.97ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:55:18.512 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:55:39.486 ServerApp] 404 GET /api/metrics/v1?1777416939460 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 6.47ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:56:09.508 ServerApp] 404 GET /api/metrics/v1?1777416969483 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 8.07ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:56:39.524 ServerApp] 404 GET /api/metrics/v1?1777416999506 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.01ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:56:46.357 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:56:52.074 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:57:09.546 ServerApp] 404 GET /api/metrics/v1?1777417029522 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 9.05ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:57:13.301 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:57:22.659 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:57:39.570 ServerApp] 404 GET /api/metrics/v1?1777417059545 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.86ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:57:39.718 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:58:09.592 ServerApp] 404 GET /api/metrics/v1?1777417089568 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 8.02ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:58:29.851 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:58:38.528 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:58:39.623 ServerApp] 404 GET /api/metrics/v1?1777417119601 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.01ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:59:09.644 ServerApp] 404 GET /api/metrics/v1?1777417149622 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 8.58ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:59:23.958 ServerApp] 404 GET /api/metrics/v1?1777417163938 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 3.99ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:59:33.652 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 18:59:43.965 ServerApp] 404 GET /api/metrics/v1?1777417183945 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.10ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:59:45.947 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 18:59:48.263 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 19:00:13.985 ServerApp] 404 GET /api/metrics/v1?1777417213963 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 8.37ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 19:00:15.692 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 19:00:34.431 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 19:00:44.004 ServerApp] 404 GET /api/metrics/v1?1777417243982 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.09ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 19:00:55.459 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 19:01:07.642 ServerApp] 404 GET /api/metrics/v1?1777417267620 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.63ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 19:01:35.232 ServerApp] 404 GET /api/metrics/v1?1777417295210 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 8.37ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 19:01:42.629 ServerApp] 404 GET /api/metrics/v1?1777417302610 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 3.89ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 19:01:56.788 ServerApp] 404 GET /api/metrics/v1?1777417316771 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.02ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 19:02:14.768 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 19:02:26.805 ServerApp] 404 GET /api/metrics/v1?1777417346787 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.01ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 19:02:49.550 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 19:02:56.828 ServerApp] 404 GET /api/metrics/v1?1777417376803 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 7.19ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 19:03:07.048 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 19:03:12.952 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 19:03:26.846 ServerApp] 404 GET /api/metrics/v1?1777417406827 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.01ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 19:03:30.186 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 19:03:55.284 ServerApp] 404 GET /api/metrics/v1?1777417435266 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.17ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 19:04:20.283 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 19:04:25.304 ServerApp] 404 GET /api/metrics/v1?1777417465283 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 6.60ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 19:04:55.325 ServerApp] 404 GET /api/metrics/v1?1777417495301 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 5.55ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 19:05:25.166 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 19:05:25.527 ServerApp] 404 GET /api/metrics/v1?1777417525324 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 15.72ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 19:05:37.876 ServerApp] 404 GET /api/metrics/v1?1777417537858 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 3.95ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 19:05:49.840 ServerApp] 404 GET /proxy/8787/status (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 3.82ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 19:05:57.809 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 19:06:14.146 ServerApp] 404 GET /api/metrics/v1?1777417574116 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.50ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 19:06:30.477 ServerApp] 404 GET /api/metrics/v1?1777417590457 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 6.42ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 19:06:36.003 ServerApp] 404 GET /api/metrics/v1?1777417595982 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 3.78ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 19:06:44.234 ServerApp] 404 GET /api/metrics/v1?1777417604215 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.09ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 19:07:13.476 ServerApp] 404 GET /api/metrics/v1?1777417633456 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 6.56ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 19:07:26.211 ServerApp] 404 GET /api/metrics/v1?1777417646193 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 3.87ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 19:07:33.769 ServerApp] 404 GET /api/metrics/v1?1777417653749 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 6.64ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 19:07:54.476 ServerApp] 404 GET /api/metrics/v1?1777417674459 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 3.82ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 19:07:58.306 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 19:08:12.548 ServerApp] 404 GET /api/metrics/v1?1777417692517 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 4.03ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 19:08:25.480 ServerApp] 404 GET /api/metrics/v1?1777417705457 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 6.47ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-28 19:08:43.480 ServerApp] 404 GET /api/metrics/v1?1777417723459 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 6.82ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 19:08:44.747 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 19:08:46.217 ServerApp] Kernel interrupted: 9ad01bcd-fd89-457f-864a-c61a010270bb
+[I 2026-04-28 19:08:46.439 ServerApp] Kernel interrupted: 9ad01bcd-fd89-457f-864a-c61a010270bb
+[I 2026-04-28 19:08:46.834 ServerApp] Kernel interrupted: 9ad01bcd-fd89-457f-864a-c61a010270bb
+[I 2026-04-28 19:08:47.131 ServerApp] Kernel interrupted: 9ad01bcd-fd89-457f-864a-c61a010270bb
+[I 2026-04-28 19:08:47.314 ServerApp] Kernel interrupted: 9ad01bcd-fd89-457f-864a-c61a010270bb
+[I 2026-04-28 19:08:47.636 ServerApp] Kernel interrupted: 9ad01bcd-fd89-457f-864a-c61a010270bb
+[I 2026-04-28 19:08:47.809 ServerApp] Kernel interrupted: 9ad01bcd-fd89-457f-864a-c61a010270bb
+[I 2026-04-28 19:08:47.971 ServerApp] Kernel interrupted: 9ad01bcd-fd89-457f-864a-c61a010270bb
+[I 2026-04-28 19:08:48.130 ServerApp] Kernel interrupted: 9ad01bcd-fd89-457f-864a-c61a010270bb
+[I 2026-04-28 19:08:48.277 ServerApp] Kernel interrupted: 9ad01bcd-fd89-457f-864a-c61a010270bb
+[I 2026-04-28 19:08:48.420 ServerApp] Kernel interrupted: 9ad01bcd-fd89-457f-864a-c61a010270bb
+[I 2026-04-28 19:08:48.564 ServerApp] Kernel interrupted: 9ad01bcd-fd89-457f-864a-c61a010270bb
+[I 2026-04-28 19:08:48.725 ServerApp] Kernel interrupted: 9ad01bcd-fd89-457f-864a-c61a010270bb
+[I 2026-04-28 19:08:48.884 ServerApp] Kernel interrupted: 9ad01bcd-fd89-457f-864a-c61a010270bb
+[I 2026-04-28 19:08:49.139 ServerApp] Kernel interrupted: 9ad01bcd-fd89-457f-864a-c61a010270bb
+[I 2026-04-28 19:08:49.299 ServerApp] Kernel interrupted: 9ad01bcd-fd89-457f-864a-c61a010270bb
+[W 2026-04-28 19:08:58.258 ServerApp] 404 GET /api/metrics/v1?1777417738240 (c110b9f548ba41709cb381063c67c5c0@10.141.0.12) 3.89ms referer=http://127.0.0.1:8682/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 19:09:01.369 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-28 19:09:04.363 ServerApp] Kernel shutdown: 9ad01bcd-fd89-457f-864a-c61a010270bb
+2026-04-28 19:08:46,458 - distributed.worker - ERROR - 
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/asyncio/base_events.py", line 678, in run_until_complete
+    self.run_forever()
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/asyncio/base_events.py", line 645, in run_forever
+    self._run_once()
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/asyncio/base_events.py", line 1961, in _run_once
+    event_list = self._selector.select(timeout)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/selectors.py", line 468, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/asyncio/runners.py", line 157, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/distributed/utils.py", line 823, in wrapper
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/distributed/worker.py", line 1581, in close
+    await r.close_gracefully(reason=reason)
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/distributed/core.py", line 1256, in send_recv_from_rpc
+    comm = await self.pool.connect(self.addr)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/distributed/core.py", line 1485, in connect
+    return await self._connect(addr=addr, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/distributed/core.py", line 1429, in _connect
+    comm = await connect(
+           ^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/distributed/comm/core.py", line 377, in connect
+    handshake = await comm.read()
+                ^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/distributed/comm/tcp.py", line 226, in read
+    frames_nosplit_nbytes_bin = await stream.read_bytes(fmt_size)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+2026-04-28 19:08:46,459 - distributed.worker - ERROR - 
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/asyncio/base_events.py", line 678, in run_until_complete
+    self.run_forever()
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/asyncio/base_events.py", line 645, in run_forever
+    self._run_once()
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/asyncio/base_events.py", line 1961, in _run_once
+    event_list = self._selector.select(timeout)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/selectors.py", line 468, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/asyncio/runners.py", line 157, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/distributed/utils.py", line 823, in wrapper
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/distributed/worker.py", line 1581, in close
+    await r.close_gracefully(reason=reason)
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/distributed/core.py", line 1256, in send_recv_from_rpc
+    comm = await self.pool.connect(self.addr)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/distributed/core.py", line 1485, in connect
+    return await self._connect(addr=addr, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/distributed/core.py", line 1429, in _connect
+    comm = await connect(
+           ^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/distributed/comm/core.py", line 377, in connect
+    handshake = await comm.read()
+                ^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/distributed/comm/tcp.py", line 226, in read
+    frames_nosplit_nbytes_bin = await stream.read_bytes(fmt_size)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+2026-04-28 19:08:46,459 - distributed.worker - ERROR - 
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/asyncio/base_events.py", line 678, in run_until_[I 2026-04-28 19:09:08.723 ServerApp] Shutting down on /api/shutdown request.
+[I 2026-04-28 19:09:08.728 ServerApp] Shutting down 4 extensions

@@ -1,0 +1,20 @@
+2026-04-29 10:18:01,656 - distributed.nanny - INFO -         Start Nanny at: 'tcp://172.16.3.168:42748'
+2026-04-29 10:18:03,191 - distributed.diskutils - INFO - Found stale lock file and directory '/tmp/dask-scratch-space/worker-97aptjja', purging
+2026-04-29 10:18:04,711 - distributed.worker - INFO -       Start worker at:   tcp://172.16.3.168:45754
+2026-04-29 10:18:04,711 - distributed.worker - INFO -          Listening to:   tcp://172.16.3.168:45754
+2026-04-29 10:18:04,712 - distributed.worker - INFO -           Worker name:             SLURMCluster-3
+2026-04-29 10:18:04,712 - distributed.worker - INFO -          dashboard at:         172.16.3.168:36539
+2026-04-29 10:18:04,712 - distributed.worker - INFO - Waiting to connect to:   tcp://172.16.3.190:37995
+2026-04-29 10:18:04,712 - distributed.worker - INFO - -------------------------------------------------
+2026-04-29 10:18:04,712 - distributed.worker - INFO -               Threads:                         36
+2026-04-29 10:18:04,712 - distributed.worker - INFO -                Memory:                 176.95 GiB
+2026-04-29 10:18:04,712 - distributed.worker - INFO -       Local Directory: /tmp/dask-scratch-space/worker-s3gm1gba
+2026-04-29 10:18:04,712 - distributed.worker - INFO - -------------------------------------------------
+2026-04-29 10:18:04,745 - distributed.worker - INFO - Starting Worker plugin shuffle
+2026-04-29 10:18:04,746 - distributed.worker - INFO -         Registered to:   tcp://172.16.3.190:37995
+2026-04-29 10:18:04,746 - distributed.worker - INFO - -------------------------------------------------
+2026-04-29 10:18:04,747 - distributed.core - INFO - Starting established connection to tcp://172.16.3.190:37995
+2026-04-29 10:18:48,806 - distributed.core - INFO - Event loop was unresponsive in Worker for 3.18s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+2026-04-29 10:19:10,844 - distributed.core - INFO - Event loop was unresponsive in Worker for 3.54s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+2026-04-29 10:19:18,444 - distributed.core - INFO - Event loop was unresponsive in Worker for 5.46s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+slurmstepd: error: *** JOB 1920029 ON pn118 CANCELLED AT 2026-04-29T13:18:11 DUE TO TIME LIMIT ***

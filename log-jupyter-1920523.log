@@ -1,0 +1,1330 @@
+
+For more info and how to connect from windows,
+see https://docs.ycrc.yale.edu/clusters-at-yale/guides/jupyter/
+MacOS or linux terminal command to create your ssh tunnel
+ssh -N -f -L 9169:pn031:9169 anthony.meza@poseidon.whoi.edu
+Windows MobaXterm info
+Forwarded port:same as remote port Remote server: pn031
+Remote port: 9169
+SSH server: poseidon.whoi.edu
+SSHlogin: anthony.meza
+SSH port: 22
+Use a Browser on your local machine to go to: localhost:9169 (prefix w/ https:// if using password) 
+[W 2026-04-29 19:26:06.342 ServerApp] jupyter_resource_usage | error adding extension (enabled: True): The module 'jupyter_resource_usage' could not be found (No module named 'jupyter_resource_usage'). Are you sure the extension is installed?
+    Traceback (most recent call last):
+      File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server/extension/manager.py", line 365, in add_extension
+        extpkg = ExtensionPackage(name=extension_name, enabled=enabled)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server/extension/manager.py", line 219, in __init__
+        self._load_metadata()
+      File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server/extension/manager.py", line 234, in _load_metadata
+        raise ExtensionModuleNotFound(msg) from None
+    jupyter_server.extension.utils.ExtensionModuleNotFound: The module 'jupyter_resource_usage' could not be found (No module named 'jupyter_resource_usage'). Are you sure the extension is installed?
+[I 2026-04-29 19:26:06.702 ServerApp] dask_labextension | extension was successfully linked.
+[I 2026-04-29 19:26:06.702 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2026-04-29 19:26:06.703 ServerApp] jupyter_server_proxy | extension was successfully linked.
+[I 2026-04-29 19:26:06.735 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2026-04-29 19:26:06.768 ServerApp] jupyterlab | extension was successfully linked.
+[W 2026-04-29 19:26:12.849 ServerApp] jupyter_nbextensions_configurator | error adding extension (enabled: True): The module 'jupyter_nbextensions_configurator' could not be found (No module named 'jupyter_nbextensions_configurator'). Are you sure the extension is installed?
+    Traceback (most recent call last):
+      File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server/extension/manager.py", line 365, in add_extension
+        extpkg = ExtensionPackage(name=extension_name, enabled=enabled)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server/extension/manager.py", line 219, in __init__
+        self._load_metadata()
+      File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server/extension/manager.py", line 234, in _load_metadata
+        raise ExtensionModuleNotFound(msg) from None
+    jupyter_server.extension.utils.ExtensionModuleNotFound: The module 'jupyter_nbextensions_configurator' could not be found (No module named 'jupyter_nbextensions_configurator'). Are you sure the extension is installed?
+[W 2026-04-29 19:26:12.854 ServerApp] jupyter_resource_usage | error adding extension (enabled: True): The module 'jupyter_resource_usage' could not be found (No module named 'jupyter_resource_usage'). Are you sure the extension is installed?
+    Traceback (most recent call last):
+      File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server/extension/manager.py", line 365, in add_extension
+        extpkg = ExtensionPackage(name=extension_name, enabled=enabled)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server/extension/manager.py", line 219, in __init__
+        self._load_metadata()
+      File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server/extension/manager.py", line 234, in _load_metadata
+        raise ExtensionModuleNotFound(msg) from None
+    jupyter_server.extension.utils.ExtensionModuleNotFound: The module 'jupyter_resource_usage' could not be found (No module named 'jupyter_resource_usage'). Are you sure the extension is installed?
+[I 2026-04-29 19:26:12.855 ServerApp] notebook_shim | extension was successfully linked.
+[I 2026-04-29 19:26:13.342 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2026-04-29 19:26:13.344 ServerApp] dask_labextension | extension was successfully loaded.
+[I 2026-04-29 19:26:13.348 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2026-04-29 19:26:13.561 ServerApp] jupyter_server_proxy | extension was successfully loaded.
+[I 2026-04-29 19:26:13.563 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2026-04-29 19:26:13.722 LabApp] JupyterLab extension loaded from /vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyterlab
+[I 2026-04-29 19:26:13.722 LabApp] JupyterLab application directory is /vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/share/jupyter/lab
+[I 2026-04-29 19:26:13.730 LabApp] Extension Manager is 'pypi'.
+[I 2026-04-29 19:26:14.701 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2026-04-29 19:26:14.702 ServerApp] Serving notebooks from local directory: /vortexfs1/home/anthony.meza/xbudget
+[I 2026-04-29 19:26:14.702 ServerApp] Jupyter Server 2.17.0 is running at:
+[I 2026-04-29 19:26:14.702 ServerApp] http://pn031:9169/lab?token=86f632d7a3e0f6e1d7d4244864f428abef2961c06bc0a758
+[I 2026-04-29 19:26:14.702 ServerApp]     http://127.0.0.1:9169/lab?token=86f632d7a3e0f6e1d7d4244864f428abef2961c06bc0a758
+[I 2026-04-29 19:26:14.702 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2026-04-29 19:26:14.777 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///vortexfs1/home/anthony.meza/.local/share/jupyter/runtime/jpserver-120184-open.html
+    Or copy and paste one of these URLs:
+        http://pn031:9169/lab?token=86f632d7a3e0f6e1d7d4244864f428abef2961c06bc0a758
+        http://127.0.0.1:9169/lab?token=86f632d7a3e0f6e1d7d4244864f428abef2961c06bc0a758
+[I 2026-04-29 19:26:15.174 ServerApp] Skipped non-installed server(s): basedpyright, bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyrefly, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2026-04-29 19:26:33.990 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2026-04-29 19:26:34.646 ServerApp] 404 GET /api/metrics/v1?1777505193866 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 412.11ms referer=http://127.0.0.1:9169/lab
+[W 2026-04-29 19:26:35.839 ServerApp] 404 GET /api/contents/notebooks?content=0&hash=0&1777505195700 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.74ms referer=http://127.0.0.1:9169/lab
+[W 2026-04-29 19:26:35.877 ServerApp] 404 GET /api/contents/notebooks/5.processing_SectionTracers_Znative_PAC.ipynb?content=0&hash=0&1777505195700 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 3.91ms referer=http://127.0.0.1:9169/lab
+[W 2026-04-29 19:26:35.883 ServerApp] 404 GET /api/contents/notebooks/plots?content=0&hash=0&1777505195700 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 2.62ms referer=http://127.0.0.1:9169/lab
+[W 2026-04-29 19:26:35.926 ServerApp] 404 GET /api/contents/notebooks/plots/6.Weddell_density_and_sf6.png?content=0&hash=0&1777505195700 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 3.95ms referer=http://127.0.0.1:9169/lab
+[W 2026-04-29 19:26:35.969 ServerApp] 404 GET /api/contents/notebooks/plots/6.Weddell_density_and_sf6.png?content=0&hash=0&1777505195700 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 3.96ms referer=http://127.0.0.1:9169/lab
+[W 2026-04-29 19:26:36.001 ServerApp] 404 GET /api/contents/notebooks/5.processing_SectionTracers_Znative_PAC.ipynb?content=0&hash=0&1777505195700 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 3.82ms referer=http://127.0.0.1:9169/lab
+[W 2026-04-29 19:26:37.213 ServerApp] 404 GET /api/contents/notebooks/plots?1777505197175 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 3.79ms referer=http://127.0.0.1:9169/lab
+[W 2026-04-29 19:26:37.429 ServerApp] 404 GET /api/metrics/v1?1777505197364 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 8.19ms referer=http://127.0.0.1:9169/lab
+[W 2026-04-29 19:26:42.849 ServerApp] 404 GET /api/metrics/v1?1777505202793 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 14.33ms referer=http://127.0.0.1:9169/lab/tree/examples
+[W 2026-04-29 19:26:48.367 ServerApp] Notebook examples/eccov4r4_budget_examples_isopycnal_overturning.ipynb is not trusted
+[I 2026-04-29 19:26:48.792 ServerApp] Kernel started: 9bd8ee20-2277-4725-8160-e6fd48e86792
+[W 2026-04-29 19:26:55.128 ServerApp] 404 GET /api/metrics/v1?1777505215075 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 10.27ms referer=http://127.0.0.1:9169/lab/tree/examples
+[I 2026-04-29 19:26:56.952 ServerApp] Adapting from protocol version 5.3 (kernel 9bd8ee20-2277-4725-8160-e6fd48e86792) to 5.4 (client).
+[I 2026-04-29 19:26:56.955 ServerApp] Connecting to kernel 9bd8ee20-2277-4725-8160-e6fd48e86792.
+[I 2026-04-29 19:26:57.247 ServerApp] Starting buffering for 9bd8ee20-2277-4725-8160-e6fd48e86792:a2ae601f-fab3-4638-a5f1-3357d35359a2
+[I 2026-04-29 19:26:57.253 ServerApp] Adapting from protocol version 5.3 (kernel 9bd8ee20-2277-4725-8160-e6fd48e86792) to 5.4 (client).
+[I 2026-04-29 19:26:57.255 ServerApp] Connecting to kernel 9bd8ee20-2277-4725-8160-e6fd48e86792.
+[I 2026-04-29 19:26:57.341 ServerApp] Kernel started: 7b26c23e-165e-4e99-bc7e-cfbfe5b072ee
+[I 2026-04-29 19:26:57.389 ServerApp] Adapting from protocol version 5.3 (kernel 9bd8ee20-2277-4725-8160-e6fd48e86792) to 5.4 (client).
+[I 2026-04-29 19:26:57.392 ServerApp] Connecting to kernel 9bd8ee20-2277-4725-8160-e6fd48e86792.
+[I 2026-04-29 19:27:02.155 ServerApp] Creating new file in /examples
+[I 2026-04-29 19:27:03.053 ServerApp] Adapting from protocol version 5.3 (kernel 7b26c23e-165e-4e99-bc7e-cfbfe5b072ee) to 5.4 (client).
+2026-04-29 19:27:03,054 - ServerApp - ERROR - Uncaught exception GET /api/kernels/7b26c23e-165e-4e99-bc7e-cfbfe5b072ee/channels?session_id=8b58f63a-209e-476e-91b7-cc148ded3d5d (10.141.0.12)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9169', method='GET', uri='/api/kernels/7b26c23e-165e-4e99-bc7e-cfbfe5b072ee/channels?session_id=8b58f63a-209e-476e-91b7-cc148ded3d5d', version='HTTP/1.1', remote_ip='10.141.0.12')
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/web.py", line 1880, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server/services/kernels/websocket.py", line 66, in get
+    await super().get(kernel_id=kernel_id)
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/websocket.py", line 277, in get
+    await self.ws_connection.accept_connection(self)
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/websocket.py", line 890, in accept_connection
+    await self._accept_connection(handler)
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/websocket.py", line 930, in _accept_connection
+    self.selected_subprotocol = handler.select_subprotocol(subprotocols)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server/services/kernels/websocket.py", line 88, in select_subprotocol
+    preferred_protocol = self.connection.kernel_ws_protocol
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'kernel_ws_protocol'
+[E 2026-04-29 19:27:03.109 ServerApp] {
+      "Host": "127.0.0.1:9169",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+    }
+[E 2026-04-29 19:27:03.109 ServerApp] 500 GET /api/kernels/7b26c23e-165e-4e99-bc7e-cfbfe5b072ee/channels?session_id=8b58f63a-209e-476e-91b7-cc148ded3d5d (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 5554.01ms referer=None
+[W 2026-04-29 19:27:08.090 ServerApp] 404 GET /api/metrics/v1?1777505228039 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 8.54ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_examples_isopycnal_overturning.ipynb
+[W 2026-04-29 19:27:14.689 ServerApp] 404 GET /api/metrics/v1?1777505234636 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 16.28ms referer=http://127.0.0.1:9169/lab/tree/examples/untitled.py
+[I 2026-04-29 19:27:18.732 ServerApp] Kernel started: 9c786047-d27c-4908-98b2-541ed0cfb5d4
+[W 2026-04-29 19:27:20.229 ServerApp] 404 GET /api/metrics/v1?1777505239927 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 6.33ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-29 19:27:22.178 ServerApp] Kernel started: cd5caceb-d276-44dc-83b4-38765544e4e4
+[I 2026-04-29 19:27:25.636 ServerApp] Adapting from protocol version 5.3 (kernel 9c786047-d27c-4908-98b2-541ed0cfb5d4) to 5.4 (client).
+[I 2026-04-29 19:27:25.638 ServerApp] Connecting to kernel 9c786047-d27c-4908-98b2-541ed0cfb5d4.
+[I 2026-04-29 19:27:25.861 ServerApp] Adapting from protocol version 5.3 (kernel cd5caceb-d276-44dc-83b4-38765544e4e4) to 5.4 (client).
+[I 2026-04-29 19:27:25.862 ServerApp] Connecting to kernel cd5caceb-d276-44dc-83b4-38765544e4e4.
+[W 2026-04-29 19:27:31.533 ServerApp] 404 GET /api/metrics/v1?1777505251428 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.18ms referer=http://127.0.0.1:9169/lab/tree/examples/untitled.py
+[I 2026-04-29 19:27:34.298 ServerApp] Saving file at /examples/untitled.py
+[W 2026-04-29 19:27:34.573 ServerApp] 404 GET /api/contents/examples?content=1&hash=0&1777505254392 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 129.77ms referer=http://127.0.0.1:9169/lab/tree/examples/untitled.py
+[I 2026-04-29 19:27:49.910 ServerApp] Copying 'examples/eccov4r4_mask_tools.py' to '/examples'
+[W 2026-04-29 19:28:01.153 ServerApp] 404 GET /api/metrics/v1?1777505281100 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 18.87ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-29 19:28:22.009 ServerApp] 404 GET /api/metrics/v1?1777505301956 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 9.23ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_transport_tools.py
+[I 2026-04-29 19:28:24.562 ServerApp] Saving file at /examples/eccov4r4_transport_tools.py
+[I 2026-04-29 19:28:26.284 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-29 19:28:41.857 ServerApp] Copying 'examples/eccov4r4_budget_example_ASC_transport.ipynb' to '/examples'
+[W 2026-04-29 19:28:52.100 ServerApp] 404 GET /api/metrics/v1?1777505332012 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 9.96ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[I 2026-04-29 19:28:57.221 ServerApp] Kernel started: 90fcf4da-c202-4b92-989c-9fbf3c8504c6
+[I 2026-04-29 19:28:57.793 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:29:03.590 ServerApp] Adapting from protocol version 5.3 (kernel 90fcf4da-c202-4b92-989c-9fbf3c8504c6) to 5.4 (client).
+[I 2026-04-29 19:29:03.592 ServerApp] Connecting to kernel 90fcf4da-c202-4b92-989c-9fbf3c8504c6.
+[W 2026-04-29 19:29:22.295 ServerApp] 404 GET /api/metrics/v1?1777505362103 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 8.28ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:29:27.344 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:29:52.365 ServerApp] 404 GET /api/metrics/v1?1777505392320 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 9.96ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:30:06.652 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:30:28.827 ServerApp] Saving file at /examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-29 19:30:43.775 ServerApp] 404 GET /api/metrics/v1?1777505443378 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 8.82ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:31:30.427 ServerApp] 404 GET /api/metrics/v1?1777505490376 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 13.43ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:31:44.323 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:31:45.541 ServerApp] 404 GET /api/metrics/v1?1777505504564 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 46.43ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:32:02.776 ServerApp] 404 GET /api/metrics/v1?1777505522736 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.55ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:32:32.861 ServerApp] 404 GET /api/metrics/v1?1777505552799 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 23.13ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:33:02.954 ServerApp] 404 GET /api/metrics/v1?1777505582865 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 7.84ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:33:11.253 ServerApp] 404 GET /api/metrics/v1?1777505591205 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.15ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:33:33.489 ServerApp] 404 GET /api/metrics/v1?1777505613434 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 17.72ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:33:41.074 ServerApp] 404 GET /api/metrics/v1?1777505621032 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.17ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:33:45.942 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:33:55.279 ServerApp] 404 GET /api/metrics/v1?1777505635235 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.15ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:34:13.045 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:34:20.728 ServerApp] 404 GET /api/metrics/v1?1777505660683 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 6.68ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:34:33.419 ServerApp] 404 GET /api/metrics/v1?1777505673366 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 8.08ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:34:56.881 ServerApp] 404 GET /api/metrics/v1?1777505696830 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 11.73ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:35:20.385 ServerApp] 404 GET /api/metrics/v1?1777505720343 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 6.78ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:35:50.454 ServerApp] 404 GET /api/metrics/v1?1777505750409 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 7.06ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:36:14.040 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:36:17.233 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:36:20.680 ServerApp] 404 GET /api/metrics/v1?1777505780622 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 10.02ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:36:58.424 ServerApp] 404 GET /api/metrics/v1?1777505818376 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 6.19ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:37:03.641 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:37:06.105 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:37:10.796 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:37:12.276 ServerApp] 404 GET /api/metrics/v1?1777505832234 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.36ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:37:13.708 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:37:25.414 ServerApp] 404 GET /api/metrics/v1?1777505845352 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 20.66ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:37:27.461 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:37:29.734 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:37:38.719 ServerApp] 404 GET /api/metrics/v1?1777505858653 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.09ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:37:43.493 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:38:02.842 ServerApp] Trying to establish websocket connection to ws://localhost:8787/individual-workers-memory/ws
+[I 2026-04-29 19:38:02.848 ServerApp] Websocket connection established to ws://localhost:8787/individual-workers-memory/ws
+[I 2026-04-29 19:38:02.934 ServerApp] Trying to establish websocket connection to ws://localhost:8787/individual-task-stream/ws
+[I 2026-04-29 19:38:02.942 ServerApp] Websocket connection established to ws://localhost:8787/individual-task-stream/ws
+[I 2026-04-29 19:38:03.036 ServerApp] Trying to establish websocket connection to ws://localhost:8787/individual-progress/ws
+[I 2026-04-29 19:38:03.066 ServerApp] Websocket connection established to ws://localhost:8787/individual-progress/ws
+[W 2026-04-29 19:38:08.791 ServerApp] 404 GET /api/metrics/v1?1777505888750 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 6.88ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:38:38.847 ServerApp] 404 GET /api/metrics/v1?1777505918794 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 9.67ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:39:14.422 ServerApp] 404 GET /api/metrics/v1?1777505954376 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 5.73ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:39:21.264 ServerApp] 404 GET /api/metrics/v1?1777505961218 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 5.82ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:39:33.051 ServerApp] 404 GET /api/metrics/v1?1777505973009 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.09ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:39:43.400 ServerApp] 404 GET /api/metrics/v1?1777505983349 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 10.81ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:39:44.391 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:39:46.493 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:39:52.095 ServerApp] 404 GET /api/metrics/v1?1777505992053 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.21ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:39:56.323 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:40:07.724 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:40:13.491 ServerApp] 404 GET /api/metrics/v1?1777506013446 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.49ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:40:36.312 ServerApp] 404 GET /api/metrics/v1?1777506036260 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 5.05ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:41:12.433 ServerApp] 404 GET /api/metrics/v1?1777506072379 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 11.51ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:41:22.074 ServerApp] 404 GET /api/metrics/v1?1777506082021 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 2.85ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:41:30.878 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:41:46.021 ServerApp] 404 GET /api/metrics/v1?1777506105974 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 7.12ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:42:16.275 ServerApp] 404 GET /api/metrics/v1?1777506136036 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 10.59ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:42:16.783 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:42:46.348 ServerApp] 404 GET /api/metrics/v1?1777506166301 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 5.34ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:43:26.431 ServerApp] 404 GET /api/metrics/v1?1777506206377 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 9.50ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:43:39.774 ServerApp] 404 GET /api/metrics/v1?1777506219730 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.17ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:43:58.420 ServerApp] 404 GET /api/metrics/v1?1777506238379 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 5.15ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:44:19.397 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:44:20.199 ServerApp] 404 GET /api/metrics/v1?1777506259378 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.54ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:44:25.995 ServerApp] 404 GET /api/metrics/v1?1777506265948 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 5.37ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:44:33.263 ServerApp] 404 GET /api/metrics/v1?1777506273214 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 8.65ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:44:52.055 ServerApp] 404 GET /api/metrics/v1?1777506292007 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.26ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:46:15.442 ServerApp] 404 GET /api/metrics/v1?1777506375385 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 13.38ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:46:21.739 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:46:44.047 ServerApp] 404 GET /api/metrics/v1?1777506403990 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.20ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:46:53.697 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:46:56.262 ServerApp] 404 GET /api/metrics/v1?1777506416209 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.34ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:48:55.783 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:49:19.476 ServerApp] 404 GET /api/metrics/v1?1777506559364 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 9.61ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:49:26.347 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:49:27.738 ServerApp] 404 GET /api/metrics/v1?1777506567697 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.25ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:49:45.141 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:49:48.658 ServerApp] 404 GET /api/metrics/v1?1777506588599 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.43ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:50:24.426 ServerApp] 404 GET /api/metrics/v1?1777506624376 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 12.08ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:50:34.276 ServerApp] 404 GET /api/metrics/v1?1777506634234 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.22ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:50:37.657 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:50:50.461 ServerApp] 404 GET /api/metrics/v1?1777506650409 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.29ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:51:20.507 ServerApp] 404 GET /api/metrics/v1?1777506680460 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.35ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:51:47.434 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:51:50.553 ServerApp] 404 GET /api/metrics/v1?1777506710506 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 7.98ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:51:59.709 ServerApp] 404 GET /api/metrics/v1?1777506719665 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.29ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:52:25.191 ServerApp] 404 GET /api/metrics/v1?1777506745149 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.30ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:52:55.347 ServerApp] 404 GET /api/metrics/v1?1777506775282 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 5.77ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:53:25.467 ServerApp] 404 GET /api/metrics/v1?1777506805417 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.29ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:53:48.454 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:53:55.604 ServerApp] 404 GET /api/metrics/v1?1777506835553 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 5.88ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:54:24.312 ServerApp] 404 GET /api/metrics/v1?1777506864227 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 9.70ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:54:37.941 ServerApp] 404 GET /api/metrics/v1?1777506877824 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.38ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:54:44.462 ServerApp] 404 GET /api/metrics/v1?1777506884411 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.44ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:54:58.614 ServerApp] 404 GET /api/metrics/v1?1777506898569 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 6.52ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:55:05.853 ServerApp] 404 GET /api/metrics/v1?1777506905810 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.18ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:55:14.659 ServerApp] 404 GET /api/metrics/v1?1777506914610 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.21ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:55:22.973 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:55:28.521 ServerApp] 404 GET /api/metrics/v1?1777506928473 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.20ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:55:36.142 ServerApp] 404 GET /api/metrics/v1?1777506936069 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.16ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:55:57.694 ServerApp] 404 GET /api/metrics/v1?1777506957646 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.18ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 19:56:27.740 ServerApp] 404 GET /api/metrics/v1?1777506987693 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 7.39ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 19:57:24.758 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:00:49.892 ServerApp] 404 GET /api/metrics/v1?1777507249757 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 29.29ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 20:01:02.670 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:01:03.058 ServerApp] 404 GET /api/metrics/v1?1777507262903 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 22.82ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:02:16.433 ServerApp] 404 GET /api/metrics/v1?1777507336375 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 5.20ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:02:22.595 ServerApp] 404 GET /api/metrics/v1?1777507342548 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.29ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:02:28.762 ServerApp] 404 GET /api/metrics/v1?1777507348698 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 3.09ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:02:43.667 ServerApp] 404 GET /api/metrics/v1?1777507363620 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.51ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 20:03:03.918 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:05:46.009 ServerApp] 404 GET /api/metrics/v1?1777507545856 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 13.99ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:05:55.070 ServerApp] 404 GET /api/metrics/v1?1777507555028 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.25ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:06:30.708 ServerApp] 404 GET /api/metrics/v1?1777507590641 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.32ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 20:06:42.009 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:06:45.436 ServerApp] 404 GET /api/metrics/v1?1777507605396 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.25ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:07:05.590 ServerApp] 404 GET /api/metrics/v1?1777507625533 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 6.82ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:07:23.422 ServerApp] 404 GET /api/metrics/v1?1777507643378 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.18ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:07:43.437 ServerApp] 404 GET /api/metrics/v1?1777507663379 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.24ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:07:57.393 ServerApp] 404 GET /api/metrics/v1?1777507677350 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 5.37ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:08:27.502 ServerApp] 404 GET /api/metrics/v1?1777507707451 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 6.82ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 20:08:43.235 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 20:08:56.084 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:08:57.547 ServerApp] 404 GET /api/metrics/v1?1777507737501 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 7.99ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 20:09:02.323 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:09:15.087 ServerApp] 404 GET /api/metrics/v1?1777507754958 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.60ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 20:09:39.285 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:09:45.138 ServerApp] 404 GET /api/metrics/v1?1777507785088 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 6.84ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:10:15.223 ServerApp] 404 GET /api/metrics/v1?1777507815137 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.97ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:10:45.289 ServerApp] 404 GET /api/metrics/v1?1777507845244 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 6.16ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 20:10:52.491 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:11:15.336 ServerApp] 404 GET /api/metrics/v1?1777507875288 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 5.10ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:11:45.385 ServerApp] 404 GET /api/metrics/v1?1777507905335 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 6.43ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:12:15.439 ServerApp] 404 GET /api/metrics/v1?1777507935389 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.83ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:12:22.251 ServerApp] 404 GET /api/metrics/v1?1777507942174 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.20ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 20:12:53.996 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:13:22.430 ServerApp] 404 GET /api/metrics/v1?1777508002378 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 8.37ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:13:28.131 ServerApp] 404 GET /api/metrics/v1?1777508008078 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.24ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:13:41.107 ServerApp] 404 GET /api/metrics/v1?1777508021061 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.16ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 20:13:41.900 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 20:13:47.307 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:13:59.019 ServerApp] 404 GET /api/metrics/v1?1777508038977 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.24ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:14:07.529 ServerApp] 404 GET /api/metrics/v1?1777508047482 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.18ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:14:18.902 ServerApp] 404 GET /api/metrics/v1?1777508058857 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.18ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_transport_tools.py
+[I 2026-04-29 20:14:28.774 ServerApp] Saving file at /examples/eccov4r4_transport_tools.py
+[I 2026-04-29 20:14:30.246 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:14:45.926 ServerApp] 404 GET /api/metrics/v1?1777508085875 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 6.67ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 20:14:48.866 ServerApp] Saving file at /examples/eccov4r4_transport_tools.py
+[I 2026-04-29 20:14:49.947 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:15:15.978 ServerApp] 404 GET /api/metrics/v1?1777508115925 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.38ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 20:15:23.176 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:15:46.026 ServerApp] 404 GET /api/metrics/v1?1777508145975 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 6.82ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 20:15:47.534 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 20:16:08.259 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:16:16.136 ServerApp] 404 GET /api/metrics/v1?1777508176022 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.29ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:16:46.198 ServerApp] 404 GET /api/metrics/v1?1777508206133 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 8.38ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:17:16.250 ServerApp] 404 GET /api/metrics/v1?1777508236200 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.52ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:17:46.303 ServerApp] 404 GET /api/metrics/v1?1777508266249 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 6.82ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 20:18:09.162 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:18:16.353 ServerApp] 404 GET /api/metrics/v1?1777508296309 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 2.80ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 20:18:30.732 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:18:46.413 ServerApp] 404 GET /api/metrics/v1?1777508326351 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 9.17ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 20:19:12.549 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:19:15.923 ServerApp] 404 GET /api/metrics/v1?1777508355822 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.42ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:19:52.337 ServerApp] 404 GET /api/metrics/v1?1777508392277 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 6.87ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:20:07.435 ServerApp] 404 GET /api/metrics/v1?1777508407379 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.39ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:20:14.252 ServerApp] 404 GET /api/metrics/v1?1777508414019 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.45ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 20:20:14.306 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 20:20:17.469 ServerApp] Kernel interrupted: 90fcf4da-c202-4b92-989c-9fbf3c8504c6
+[I 2026-04-29 20:20:18.059 ServerApp] Kernel interrupted: 90fcf4da-c202-4b92-989c-9fbf3c8504c6
+[I 2026-04-29 20:20:18.299 ServerApp] Kernel interrupted: 90fcf4da-c202-4b92-989c-9fbf3c8504c6
+[I 2026-04-29 20:20:18.441 ServerApp] Kernel interrupted: 90fcf4da-c202-4b92-989c-9fbf3c8504c6
+[I 2026-04-29 20:20:18.603 ServerApp] Kernel interrupted: 90fcf4da-c202-4b92-989c-9fbf3c8504c6
+[I 2026-04-29 20:20:18.739 ServerApp] Kernel interrupted: 90fcf4da-c202-4b92-989c-9fbf3c8504c6
+[IPKernelApp] ERROR | KeyboardInterrupt caught in kernel.
+[I 2026-04-29 20:20:18.881 ServerApp] Kernel interrupted: 90fcf4da-c202-4b92-989c-9fbf3c8504c6
+[I 2026-04-29 20:20:19.031 ServerApp] Kernel interrupted: 90fcf4da-c202-4b92-989c-9fbf3c8504c6
+[I 2026-04-29 20:20:21.286 ServerApp] Kernel interrupted: 90fcf4da-c202-4b92-989c-9fbf3c8504c6
+[I 2026-04-29 20:20:21.457 ServerApp] Kernel interrupted: 90fcf4da-c202-4b92-989c-9fbf3c8504c6
+[I 2026-04-29 20:20:21.601 ServerApp] Kernel interrupted: 90fcf4da-c202-4b92-989c-9fbf3c8504c6
+[I 2026-04-29 20:20:21.745 ServerApp] Kernel interrupted: 90fcf4da-c202-4b92-989c-9fbf3c8504c6
+[I 2026-04-29 20:20:21.886 ServerApp] Kernel interrupted: 90fcf4da-c202-4b92-989c-9fbf3c8504c6
+[W 2026-04-29 20:20:31.994 ServerApp] 404 GET /api/metrics/v1?1777508431948 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.45ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:21:02.092 ServerApp] 404 GET /api/metrics/v1?1777508462001 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 6.56ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:21:23.538 ServerApp] 404 GET /api/metrics/v1?1777508483485 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.43ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 20:21:34.358 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 20:21:38.395 ServerApp] Kernel shutdown: 9bd8ee20-2277-4725-8160-e6fd48e86792
+[I 2026-04-29 20:21:38.402 ServerApp] Kernel shutdown: 7b26c23e-165e-4e99-bc7e-cfbfe5b072ee
+[I 2026-04-29 20:21:38.405 ServerApp] Kernel shutdown: 9c786047-d27c-4908-98b2-541ed0cfb5d4
+[I 2026-04-29 20:21:38.433 ServerApp] Kernel shutdown: cd5caceb-d276-44dc-83b4-38765544e4e4
+[I 2026-04-29 20:21:38.527 ServerApp] Kernel shutdown: 90fcf4da-c202-4b92-989c-9fbf3c8504c6
+[I 2026-04-29 20:21:40.905 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+2026-04-29 20:21:45,052 - ServerApp - ERROR - Uncaught exception GET /proxy/8787/individual-plots.json?1777508465651 (10.141.0.12)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9169', method='GET', uri='/proxy/8787/individual-plots.json?1777508465651', version='HTTP/1.1', remote_ip='10.141.0.12')
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/web.py", line 1880, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/websocket.py", line 101, in get
+    return await self.http_get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 744, in http_get
+    return await self.proxy(port, proxied_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 420, in proxy
+    return await self._proxy_buffered(host, port, proxied_path, body, client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 511, in _proxy_buffered
+    response = await client.fetch(req, raise_error=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/iostream.py", line 861, in _read_to_buffer
+    bytes_read = self.read_from_fd(buf)
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/iostream.py", line 1113, in read_from_fd
+    return self.socket.recv_into(buf, len(buf))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+[E 2026-04-29 20:21:45.072 ServerApp] {
+      "Host": "127.0.0.1:9169",
+      "Accept": "*/*",
+      "Referer": "http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+    }
+[E 2026-04-29 20:21:45.072 ServerApp] 500 GET /proxy/8787/individual-plots.json?1777508465651 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 39316.18ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+2026-04-29 20:21:45,131 - ServerApp - ERROR - Uncaught exception GET /proxy/8787/individual-plots.json?1777508505082 (10.141.0.12)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9169', method='GET', uri='/proxy/8787/individual-plots.json?1777508505082', version='HTTP/1.1', remote_ip='10.141.0.12')
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/web.py", line 1880, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/websocket.py", line 101, in get
+    return await self.http_get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 744, in http_get
+    return await self.proxy(port, proxied_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 420, in proxy
+    return await self._proxy_buffered(host, port, proxied_path, body, client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 511, in _proxy_buffered
+    response = await client.fetch(req, raise_error=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+[E 2026-04-29 20:21:45.134 ServerApp] {
+      "Host": "127.0.0.1:9169",
+      "Accept": "*/*",
+      "Referer": "http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+    }
+[E 2026-04-29 20:21:45.134 ServerApp] 500 GET /proxy/8787/individual-plots.json?1777508505082 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 8.67ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+2026-04-29 20:21:45,445 - ServerApp - ERROR - Uncaught exception GET /proxy/8787/individual-plots.json?1777508505382 (10.141.0.12)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9169', method='GET', uri='/proxy/8787/individual-plots.json?1777508505382', version='HTTP/1.1', remote_ip='10.141.0.12')
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/web.py", line 1880, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/websocket.py", line 101, in get
+    return await self.http_get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 744, in http_get
+    return await self.proxy(port, proxied_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 420, in proxy
+    return await self._proxy_buffered(host, port, proxied_path, body, client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 511, in _proxy_buffered
+    response = await client.fetch(req, raise_error=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+[E 2026-04-29 20:21:45.448 ServerApp] {
+      "Host": "127.0.0.1:9169",
+      "Accept": "*/*",
+      "Referer": "http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+    }
+[E 2026-04-29 20:21:45.448 ServerApp] 500 GET /proxy/8787/individual-plots.json?1777508505382 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 7.94ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+2026-04-29 20:21:47,162 - ServerApp - ERROR - Uncaught exception GET /proxy/8787/individual-plots.json?1777508507112 (10.141.0.12)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9169', method='GET', uri='/proxy/8787/individual-plots.json?1777508507112', version='HTTP/1.1', remote_ip='10.141.0.12')
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/web.py", line 1880, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/websocket.py", line 101, in get
+    return await self.http_get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 744, in http_get
+    return await self.proxy(port, proxied_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 420, in proxy
+    return await self._proxy_buffered(host, port, proxied_path, body, client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 511, in _proxy_buffered
+    response = await client.fetch(req, raise_error=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+[E 2026-04-29 20:21:47.165 ServerApp] {
+      "Host": "127.0.0.1:9169",
+      "Accept": "*/*",
+      "Referer": "http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+    }
+[E 2026-04-29 20:21:47.165 ServerApp] 500 GET /proxy/8787/individual-plots.json?1777508507112 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 7.34ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 20:21:47.642 ServerApp] Kernel started: bbc3269e-2340-4ee4-a041-79402851778c
+[I 2026-04-29 20:21:51.796 ServerApp] Adapting from protocol version 5.3 (kernel bbc3269e-2340-4ee4-a041-79402851778c) to 5.4 (client).
+[I 2026-04-29 20:21:51.797 ServerApp] Connecting to kernel bbc3269e-2340-4ee4-a041-79402851778c.
+2026-04-29 20:21:51,818 - ServerApp - ERROR - Uncaught exception GET /proxy/8787/individual-plots.json?1777508511758 (10.141.0.12)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9169', method='GET', uri='/proxy/8787/individual-plots.json?1777508511758', version='HTTP/1.1', remote_ip='10.141.0.12')
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/web.py", line 1880, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/websocket.py", line 101, in get
+    return await self.http_get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 744, in http_get
+    return await self.proxy(port, proxied_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 420, in proxy
+    return await self._proxy_buffered(host, port, proxied_path, body, client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 511, in _proxy_buffered
+    response = await client.fetch(req, raise_error=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+[E 2026-04-29 20:21:51.820 ServerApp] {
+      "Host": "127.0.0.1:9169",
+      "Accept": "*/*",
+      "Referer": "http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+    }
+[E 2026-04-29 20:21:51.820 ServerApp] 500 GET /proxy/8787/individual-plots.json?1777508511758 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 7.60ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:21:53.608 ServerApp] 404 GET /api/metrics/v1?1777508513553 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.24ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 20:21:58.833 ServerApp] Trying to establish websocket connection to ws://localhost:8787/individual-task-stream/ws
+[I 2026-04-29 20:21:58.838 ServerApp] Websocket connection established to ws://localhost:8787/individual-task-stream/ws
+[I 2026-04-29 20:21:59.003 ServerApp] Trying to establish websocket connection to ws://localhost:8787/individual-progress/ws
+[I 2026-04-29 20:21:59.008 ServerApp] Websocket connection established to ws://localhost:8787/individual-progress/ws
+[I 2026-04-29 20:21:59.105 ServerApp] Trying to establish websocket connection to ws://localhost:8787/individual-workers-memory/ws
+[I 2026-04-29 20:21:59.124 ServerApp] Websocket connection established to ws://localhost:8787/individual-workers-memory/ws
+[I 2026-04-29 20:22:15.260 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:22:23.745 ServerApp] 404 GET /api/metrics/v1?1777508543694 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 7.53ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 20:22:28.603 ServerApp] Trying to establish websocket connection to ws://localhost:34407/individual-progress/ws
+[I 2026-04-29 20:22:28.622 ServerApp] Websocket connection established to ws://localhost:34407/individual-progress/ws
+[I 2026-04-29 20:22:28.685 ServerApp] Trying to establish websocket connection to ws://localhost:34407/individual-task-stream/ws
+[I 2026-04-29 20:22:28.707 ServerApp] Websocket connection established to ws://localhost:34407/individual-task-stream/ws
+[I 2026-04-29 20:22:28.868 ServerApp] Trying to establish websocket connection to ws://localhost:34407/individual-workers-memory/ws
+[I 2026-04-29 20:22:28.915 ServerApp] Websocket connection established to ws://localhost:34407/individual-workers-memory/ws
+[W 2026-04-29 20:23:11.463 ServerApp] 404 GET /api/metrics/v1?1777508591377 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.81ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:23:48.495 ServerApp] 404 GET /api/metrics/v1?1777508628380 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 5.60ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:23:55.668 ServerApp] 404 GET /api/metrics/v1?1777508635617 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.39ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 20:24:16.669 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:24:29.448 ServerApp] 404 GET /api/metrics/v1?1777508669378 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.59ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:26:01.219 ServerApp] 404 GET /api/metrics/v1?1777508761150 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.91ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:26:13.689 ServerApp] 404 GET /api/metrics/v1?1777508773642 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 3.35ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 20:30:19.774 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:32:30.033 ServerApp] 404 GET /api/metrics/v1?1777509149886 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 8.14ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:32:54.436 ServerApp] 404 GET /api/metrics/v1?1777509174383 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.22ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:33:05.349 ServerApp] 404 GET /api/metrics/v1?1777509185218 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.23ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 20:33:18.262 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:33:21.963 ServerApp] 404 GET /api/metrics/v1?1777509201919 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.28ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 20:35:19.876 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:37:07.813 ServerApp] 404 GET /api/metrics/v1?1777509427716 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 13.12ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 20:37:21.697 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 20:41:22.789 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 20:44:46.375 ServerApp] 404 GET /api/metrics/v1?1777509886162 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 6.48ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 21:00:46.530 ServerApp] 404 GET /api/metrics/v1?1777510846300 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 10.58ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 21:01:02.441 ServerApp] 404 GET /api/metrics/v1?1777510862392 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.23ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 21:01:16.042 ServerApp] 404 GET /api/metrics/v1?1777510875990 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.12ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 21:01:37.465 ServerApp] 404 GET /api/metrics/v1?1777510897419 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.34ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 21:01:45.892 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 21:02:01.576 ServerApp] 404 GET /api/metrics/v1?1777510921522 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 7.23ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 21:02:06.343 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 21:03:54.085 ServerApp] 404 GET /api/metrics/v1?1777511034017 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 12.71ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 21:03:57.202 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 21:04:08.553 ServerApp] 404 GET /api/metrics/v1?1777511048506 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.50ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 21:05:16.468 ServerApp] 404 GET /api/metrics/v1?1777511116393 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 7.01ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 21:05:29.137 ServerApp] 404 GET /api/metrics/v1?1777511129092 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.36ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 21:05:33.264 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 21:05:34.135 ServerApp] Kernel interrupted: bbc3269e-2340-4ee4-a041-79402851778c
+[I 2026-04-29 21:05:34.323 ServerApp] Kernel interrupted: bbc3269e-2340-4ee4-a041-79402851778c
+[I 2026-04-29 21:05:34.523 ServerApp] Kernel interrupted: bbc3269e-2340-4ee4-a041-79402851778c
+[I 2026-04-29 21:05:34.737 ServerApp] Kernel interrupted: bbc3269e-2340-4ee4-a041-79402851778c
+[I 2026-04-29 21:05:34.880 ServerApp] Kernel interrupted: bbc3269e-2340-4ee4-a041-79402851778c
+[I 2026-04-29 21:05:35.012 ServerApp] Kernel interrupted: bbc3269e-2340-4ee4-a041-79402851778c
+[I 2026-04-29 21:05:35.178 ServerApp] Kernel interrupted: bbc3269e-2340-4ee4-a041-79402851778c
+[I 2026-04-29 21:05:35.296 ServerApp] Kernel interrupted: bbc3269e-2340-4ee4-a041-79402851778c
+[IPKernelApp] ERROR | KeyboardInterrupt caught in kernel.
+[I 2026-04-29 21:05:35.920 ServerApp] Kernel interrupted: bbc3269e-2340-4ee4-a041-79402851778c
+[I 2026-04-29 21:05:36.080 ServerApp] Kernel interrupted: bbc3269e-2340-4ee4-a041-79402851778c
+[I 2026-04-29 21:05:36.224 ServerApp] Kernel interrupted: bbc3269e-2340-4ee4-a041-79402851778c
+[I 2026-04-29 21:05:36.305 ServerApp] Kernel interrupted: bbc3269e-2340-4ee4-a041-79402851778c
+[I 2026-04-29 21:05:36.444 ServerApp] Kernel interrupted: bbc3269e-2340-4ee4-a041-79402851778c
+[I 2026-04-29 21:05:36.580 ServerApp] Kernel interrupted: bbc3269e-2340-4ee4-a041-79402851778c
+[I 2026-04-29 21:05:36.752 ServerApp] Kernel interrupted: bbc3269e-2340-4ee4-a041-79402851778c
+[I 2026-04-29 21:05:36.872 ServerApp] Kernel interrupted: bbc3269e-2340-4ee4-a041-79402851778c
+[I 2026-04-29 21:05:37.016 ServerApp] Kernel interrupted: bbc3269e-2340-4ee4-a041-79402851778c
+[I 2026-04-29 21:05:37.176 ServerApp] Kernel interrupted: bbc3269e-2340-4ee4-a041-79402851778c
+[I 2026-04-29 21:05:37.347 ServerApp] Kernel interrupted: bbc3269e-2340-4ee4-a041-79402851778c
+[I 2026-04-29 21:05:37.808 ServerApp] Kernel interrupted: bbc3269e-2340-4ee4-a041-79402851778c
+[I 2026-04-29 21:05:37.890 ServerApp] Kernel interrupted: bbc3269e-2340-4ee4-a041-79402851778c
+[I 2026-04-29 21:05:38.038 ServerApp] Kernel interrupted: bbc3269e-2340-4ee4-a041-79402851778c
+[I 2026-04-29 21:05:38.213 ServerApp] Kernel interrupted: bbc3269e-2340-4ee4-a041-79402851778c
+[I 2026-04-29 21:05:40.033 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 21:05:41.538 ServerApp] 404 GET /api/metrics/v1?1777511141498 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.38ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 21:05:42.520 ServerApp] Kernel shutdown: bbc3269e-2340-4ee4-a041-79402851778c
+[I 2026-04-29 21:05:43.679 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 21:05:46.492 ServerApp] Kernel shutdown: bbc3269e-2340-4ee4-a041-79402851778c
+2026-04-29 21:05:48,343 - ServerApp - ERROR - Uncaught exception GET /proxy/34407/individual-plots.json?1777511148206 (10.141.0.12)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9169', method='GET', uri='/proxy/34407/individual-plots.json?1777511148206', version='HTTP/1.1', remote_ip='10.141.0.12')
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/web.py", line 1880, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/websocket.py", line 101, in get
+    return await self.http_get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 744, in http_get
+    return await self.proxy(port, proxied_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 420, in proxy
+    return await self._proxy_buffered(host, port, proxied_path, body, client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 511, in _proxy_buffered
+    response = await client.fetch(req, raise_error=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+[E 2026-04-29 21:05:48.349 ServerApp] {
+      "Host": "127.0.0.1:9169",
+      "Accept": "*/*",
+      "Referer": "http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+    }
+[E 2026-04-29 21:05:48.349 ServerApp] 500 GET /proxy/34407/individual-plots.json?1777511148206 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 10.19ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+2026-04-29 21:05:48,482 - ServerApp - ERROR - Uncaught exception GET /proxy/34407/individual-plots.json?1777511148401 (10.141.0.12)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9169', method='GET', uri='/proxy/34407/individual-plots.json?1777511148401', version='HTTP/1.1', remote_ip='10.141.0.12')
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/web.py", line 1880, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/websocket.py", line 101, in get
+    return await self.http_get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 744, in http_get
+    return await self.proxy(port, proxied_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 420, in proxy
+    return await self._proxy_buffered(host, port, proxied_path, body, client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 511, in _proxy_buffered
+    response = await client.fetch(req, raise_error=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+[E 2026-04-29 21:05:48.485 ServerApp] {
+      "Host": "127.0.0.1:9169",
+      "Accept": "*/*",
+      "Referer": "http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+    }
+[E 2026-04-29 21:05:48.485 ServerApp] 500 GET /proxy/34407/individual-plots.json?1777511148401 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 7.70ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 21:05:48.524 ServerApp] Trying to establish websocket connection to ws://localhost:34407/individual-task-stream/ws
+2026-04-29 21:05:48,526 - ServerApp - ERROR - Uncaught exception GET /proxy/34407/individual-task-stream/ws (10.141.0.12)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9169', method='GET', uri='/proxy/34407/individual-task-stream/ws', version='HTTP/1.1', remote_ip='10.141.0.12')
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/websocket.py", line 967, in _accept_connection
+    await open_result
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 747, in open
+    return await self.proxy_open("localhost", port, proxied_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 675, in proxy_open
+    await start_websocket_connection()
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 655, in start_websocket_connection
+    self.ws = await pingable_ws_connect(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+2026-04-29 21:05:50,614 - ServerApp - ERROR - Uncaught exception GET /proxy/34407/individual-plots.json?1777511150563 (10.141.0.12)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9169', method='GET', uri='/proxy/34407/individual-plots.json?1777511150563', version='HTTP/1.1', remote_ip='10.141.0.12')
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/web.py", line 1880, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/websocket.py", line 101, in get
+    return await self.http_get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 744, in http_get
+    return await self.proxy(port, proxied_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 420, in proxy
+    return await self._proxy_buffered(host, port, proxied_path, body, client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 511, in _proxy_buffered
+    response = await client.fetch(req, raise_error=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+[E 2026-04-29 21:05:50.617 ServerApp] {
+      "Host": "127.0.0.1:9169",
+      "Accept": "*/*",
+      "Referer": "http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+    }
+[E 2026-04-29 21:05:50.618 ServerApp] 500 GET /proxy/34407/individual-plots.json?1777511150563 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 7.90ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 21:05:50.624 ServerApp] Kernel started: 10b4c5ef-4ad0-4827-9c24-45e9fa0437ec
+[I 2026-04-29 21:05:53.319 ServerApp] Adapting from protocol version 5.3 (kernel 10b4c5ef-4ad0-4827-9c24-45e9fa0437ec) to 5.4 (client).
+[I 2026-04-29 21:05:53.321 ServerApp] Connecting to kernel 10b4c5ef-4ad0-4827-9c24-45e9fa0437ec.
+2026-04-29 21:05:54,923 - ServerApp - ERROR - Uncaught exception GET /proxy/34407/individual-plots.json?1777511154813 (10.141.0.12)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9169', method='GET', uri='/proxy/34407/individual-plots.json?1777511154813', version='HTTP/1.1', remote_ip='10.141.0.12')
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/web.py", line 1880, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/websocket.py", line 101, in get
+    return await self.http_get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 744, in http_get
+    return await self.proxy(port, proxied_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 420, in proxy
+    return await self._proxy_buffered(host, port, proxied_path, body, client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 511, in _proxy_buffered
+    response = await client.fetch(req, raise_error=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+[E 2026-04-29 21:05:54.926 ServerApp] {
+      "Host": "127.0.0.1:9169",
+      "Accept": "*/*",
+      "Referer": "http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+    }
+[E 2026-04-29 21:05:54.926 ServerApp] 500 GET /proxy/34407/individual-plots.json?1777511154813 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 6.46ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+2026-04-29 21:06:06,702 - ServerApp - ERROR - Uncaught exception GET /proxy/34407/individual-plots.json?1777511166600 (10.141.0.12)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9169', method='GET', uri='/proxy/34407/individual-plots.json?1777511166600', version='HTTP/1.1', remote_ip='10.141.0.12')
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/web.py", line 1880, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/websocket.py", line 101, in get
+    return await self.http_get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 744, in http_get
+    return await self.proxy(port, proxied_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 420, in proxy
+    return await self._proxy_buffered(host, port, proxied_path, body, client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 511, in _proxy_buffered
+    response = await client.fetch(req, raise_error=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+[E 2026-04-29 21:06:06.706 ServerApp] {
+      "Host": "127.0.0.1:9169",
+      "Accept": "*/*",
+      "Referer": "http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+    }
+[E 2026-04-29 21:06:06.706 ServerApp] 500 GET /proxy/34407/individual-plots.json?1777511166600 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 9.52ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 21:06:11.377 ServerApp] 404 GET /api/metrics/v1?1777511171336 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.14ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+2026-04-29 21:06:12,026 - ServerApp - ERROR - Uncaught exception GET /proxy/34407/individual-plots.json?1777511171977 (10.141.0.12)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9169', method='GET', uri='/proxy/34407/individual-plots.json?1777511171977', version='HTTP/1.1', remote_ip='10.141.0.12')
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/web.py", line 1880, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/websocket.py", line 101, in get
+    return await self.http_get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 744, in http_get
+    return await self.proxy(port, proxied_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 420, in proxy
+    return await self._proxy_buffered(host, port, proxied_path, body, client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 511, in _proxy_buffered
+    response = await client.fetch(req, raise_error=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+[E 2026-04-29 21:06:12.028 ServerApp] {
+      "Host": "127.0.0.1:9169",
+      "Accept": "*/*",
+      "Referer": "http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+    }
+[E 2026-04-29 21:06:12.028 ServerApp] 500 GET /proxy/34407/individual-plots.json?1777511171977 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 7.20ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+2026-04-29 21:06:28,434 - ServerApp - ERROR - Uncaught exception GET /proxy/34407/individual-plots.json?1777511188390 (10.141.0.12)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9169', method='GET', uri='/proxy/34407/individual-plots.json?1777511188390', version='HTTP/1.1', remote_ip='10.141.0.12')
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/web.py", line 1880, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/websocket.py", line 101, in get
+    return await self.http_get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 744, in http_get
+    return await self.proxy(port, proxied_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 420, in proxy
+    return await self._proxy_buffered(host, port, proxied_path, body, client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 511, in _proxy_buffered
+    response = await client.fetch(req, raise_error=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+[E 2026-04-29 21:06:28.440 ServerApp] {
+      "Host": "127.0.0.1:9169",
+      "Accept": "*/*",
+      "Referer": "http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+    }
+[E 2026-04-29 21:06:28.440 ServerApp] 500 GET /proxy/34407/individual-plots.json?1777511188390 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 11.55ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 21:07:41.861 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 21:07:45.092 ServerApp] 404 GET /api/metrics/v1?1777511265047 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 6.42ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+2026-04-29 21:07:45,101 - ServerApp - ERROR - Uncaught exception GET /proxy/34407/individual-plots.json?1777511265047 (10.141.0.12)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9169', method='GET', uri='/proxy/34407/individual-plots.json?1777511265047', version='HTTP/1.1', remote_ip='10.141.0.12')
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/web.py", line 1880, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/websocket.py", line 101, in get
+    return await self.http_get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 744, in http_get
+    return await self.proxy(port, proxied_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 420, in proxy
+    return await self._proxy_buffered(host, port, proxied_path, body, client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 511, in _proxy_buffered
+    response = await client.fetch(req, raise_error=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+[E 2026-04-29 21:07:45.102 ServerApp] {
+      "Host": "127.0.0.1:9169",
+      "Accept": "*/*",
+      "Referer": "http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+    }
+[E 2026-04-29 21:07:45.102 ServerApp] 500 GET /proxy/34407/individual-plots.json?1777511265047 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.67ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+2026-04-29 21:07:54,498 - ServerApp - ERROR - Uncaught exception GET /proxy/34407/individual-plots.json?1777511274454 (10.141.0.12)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9169', method='GET', uri='/proxy/34407/individual-plots.json?1777511274454', version='HTTP/1.1', remote_ip='10.141.0.12')
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/web.py", line 1880, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/websocket.py", line 101, in get
+    return await self.http_get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 744, in http_get
+    return await self.proxy(port, proxied_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 420, in proxy
+    return await self._proxy_buffered(host, port, proxied_path, body, client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 511, in _proxy_buffered
+    response = await client.fetch(req, raise_error=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+[E 2026-04-29 21:07:54.501 ServerApp] {
+      "Host": "127.0.0.1:9169",
+      "Accept": "*/*",
+      "Referer": "http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+    }
+[E 2026-04-29 21:07:54.501 ServerApp] 500 GET /proxy/34407/individual-plots.json?1777511274454 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 8.21ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+2026-04-29 21:08:14,434 - ServerApp - ERROR - Uncaught exception GET /proxy/34407/individual-plots.json?1777511294390 (10.141.0.12)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9169', method='GET', uri='/proxy/34407/individual-plots.json?1777511294390', version='HTTP/1.1', remote_ip='10.141.0.12')
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/web.py", line 1880, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/websocket.py", line 101, in get
+    return await self.http_get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 744, in http_get
+    return await self.proxy(port, proxied_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 420, in proxy
+    return await self._proxy_buffered(host, port, proxied_path, body, client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 511, in _proxy_buffered
+    response = await client.fetch(req, raise_error=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+[E 2026-04-29 21:08:14.441 ServerApp] {
+      "Host": "127.0.0.1:9169",
+      "Accept": "*/*",
+      "Referer": "http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+    }
+[E 2026-04-29 21:08:14.441 ServerApp] 500 GET /proxy/34407/individual-plots.json?1777511294390 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 12.17ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 21:09:42.855 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 21:10:39.565 ServerApp] 404 GET /api/metrics/v1?1777511439390 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.97ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+2026-04-29 21:10:39,570 - ServerApp - ERROR - Uncaught exception GET /proxy/34407/individual-plots.json?1777511439390 (10.141.0.12)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9169', method='GET', uri='/proxy/34407/individual-plots.json?1777511439390', version='HTTP/1.1', remote_ip='10.141.0.12')
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/web.py", line 1880, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/websocket.py", line 101, in get
+    return await self.http_get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 744, in http_get
+    return await self.proxy(port, proxied_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 420, in proxy
+    return await self._proxy_buffered(host, port, proxied_path, body, client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 511, in _proxy_buffered
+    response = await client.fetch(req, raise_error=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+[E 2026-04-29 21:10:39.573 ServerApp] {
+      "Host": "127.0.0.1:9169",
+      "Accept": "*/*",
+      "Referer": "http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+    }
+[E 2026-04-29 21:10:39.573 ServerApp] 500 GET /proxy/34407/individual-plots.json?1777511439390 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 15.06ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+2026-04-29 21:10:46,486 - ServerApp - ERROR - Uncaught exception GET /proxy/34407/individual-plots.json?1777511446391 (10.141.0.12)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9169', method='GET', uri='/proxy/34407/individual-plots.json?1777511446391', version='HTTP/1.1', remote_ip='10.141.0.12')
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/web.py", line 1880, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/websocket.py", line 101, in get
+    return await self.http_get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 744, in http_get
+    return await self.proxy(port, proxied_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 420, in proxy
+    return await self._proxy_buffered(host, port, proxied_path, body, client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 511, in _proxy_buffered
+    response = await client.fetch(req, raise_error=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+[E 2026-04-29 21:10:46.489 ServerApp] {
+      "Host": "127.0.0.1:9169",
+      "Accept": "*/*",
+      "Referer": "http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+    }
+[E 2026-04-29 21:10:46.489 ServerApp] 500 GET /proxy/34407/individual-plots.json?1777511446391 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 8.14ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 21:13:46.026 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+2026-04-29 21:14:38,432 - ServerApp - ERROR - Uncaught exception GET /proxy/34407/individual-plots.json?1777511678393 (10.141.0.12)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9169', method='GET', uri='/proxy/34407/individual-plots.json?1777511678393', version='HTTP/1.1', remote_ip='10.141.0.12')
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/web.py", line 1880, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/websocket.py", line 101, in get
+    return await self.http_get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 744, in http_get
+    return await self.proxy(port, proxied_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 420, in proxy
+    return await self._proxy_buffered(host, port, proxied_path, body, client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 511, in _proxy_buffered
+    response = await client.fetch(req, raise_error=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+[E 2026-04-29 21:14:38.438 ServerApp] {
+      "Host": "127.0.0.1:9169",
+      "Accept": "*/*",
+      "Referer": "http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+    }
+[E 2026-04-29 21:14:38.438 ServerApp] 500 GET /proxy/34407/individual-plots.json?1777511678393 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 11.11ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 21:14:39.478 ServerApp] 404 GET /api/metrics/v1?1777511679392 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 5.20ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+2026-04-29 21:14:48,695 - ServerApp - ERROR - Uncaught exception GET /proxy/34407/individual-plots.json?1777511688649 (10.141.0.12)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9169', method='GET', uri='/proxy/34407/individual-plots.json?1777511688649', version='HTTP/1.1', remote_ip='10.141.0.12')
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/web.py", line 1880, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/websocket.py", line 101, in get
+    return await self.http_get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 744, in http_get
+    return await self.proxy(port, proxied_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 420, in proxy
+    return await self._proxy_buffered(host, port, proxied_path, body, client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 511, in _proxy_buffered
+    response = await client.fetch(req, raise_error=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+[E 2026-04-29 21:14:48.699 ServerApp] {
+      "Host": "127.0.0.1:9169",
+      "Accept": "*/*",
+      "Referer": "http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+    }
+[E 2026-04-29 21:14:48.699 ServerApp] 500 GET /proxy/34407/individual-plots.json?1777511688649 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 8.26ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 21:14:52.864 ServerApp] 404 GET /api/metrics/v1?1777511692820 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.16ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+2026-04-29 21:14:55,650 - ServerApp - ERROR - Uncaught exception GET /proxy/34407/individual-plots.json?1777511695606 (10.141.0.12)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9169', method='GET', uri='/proxy/34407/individual-plots.json?1777511695606', version='HTTP/1.1', remote_ip='10.141.0.12')
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/web.py", line 1880, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/websocket.py", line 101, in get
+    return await self.http_get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 744, in http_get
+    return await self.proxy(port, proxied_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 420, in proxy
+    return await self._proxy_buffered(host, port, proxied_path, body, client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 511, in _proxy_buffered
+    response = await client.fetch(req, raise_error=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+[E 2026-04-29 21:14:55.653 ServerApp] {
+      "Host": "127.0.0.1:9169",
+      "Accept": "*/*",
+      "Referer": "http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+    }
+[E 2026-04-29 21:14:55.653 ServerApp] 500 GET /proxy/34407/individual-plots.json?1777511695606 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 7.93ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+2026-04-29 21:15:03,057 - ServerApp - ERROR - Uncaught exception GET /proxy/34407/individual-plots.json?1777511703016 (10.141.0.12)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9169', method='GET', uri='/proxy/34407/individual-plots.json?1777511703016', version='HTTP/1.1', remote_ip='10.141.0.12')
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/web.py", line 1880, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/websocket.py", line 101, in get
+    return await self.http_get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 744, in http_get
+    return await self.proxy(port, proxied_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 420, in proxy
+    return await self._proxy_buffered(host, port, proxied_path, body, client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 511, in _proxy_buffered
+    response = await client.fetch(req, raise_error=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+[E 2026-04-29 21:15:03.060 ServerApp] {
+      "Host": "127.0.0.1:9169",
+      "Accept": "*/*",
+      "Referer": "http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+    }
+[E 2026-04-29 21:15:03.060 ServerApp] 500 GET /proxy/34407/individual-plots.json?1777511703016 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 7.28ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 21:15:04.678 ServerApp] 404 GET /api/metrics/v1?1777511704623 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.96ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 21:15:09.314 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+2026-04-29 21:15:12,432 - ServerApp - ERROR - Uncaught exception GET /proxy/34407/individual-plots.json?1777511712392 (10.141.0.12)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9169', method='GET', uri='/proxy/34407/individual-plots.json?1777511712392', version='HTTP/1.1', remote_ip='10.141.0.12')
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/web.py", line 1880, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/websocket.py", line 101, in get
+    return await self.http_get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 744, in http_get
+    return await self.proxy(port, proxied_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 420, in proxy
+    return await self._proxy_buffered(host, port, proxied_path, body, client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 511, in _proxy_buffered
+    response = await client.fetch(req, raise_error=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+[E 2026-04-29 21:15:12.436 ServerApp] {
+      "Host": "127.0.0.1:9169",
+      "Accept": "*/*",
+      "Referer": "http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+    }
+[E 2026-04-29 21:15:12.436 ServerApp] 500 GET /proxy/34407/individual-plots.json?1777511712392 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 8.43ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 21:15:42.445 ServerApp] 404 GET /api/metrics/v1?1777511742391 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 11.77ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+2026-04-29 21:15:42,473 - ServerApp - ERROR - Uncaught exception GET /proxy/34407/individual-plots.json?1777511742392 (10.141.0.12)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9169', method='GET', uri='/proxy/34407/individual-plots.json?1777511742392', version='HTTP/1.1', remote_ip='10.141.0.12')
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/web.py", line 1880, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/websocket.py", line 101, in get
+    return await self.http_get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 744, in http_get
+    return await self.proxy(port, proxied_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 420, in proxy
+    return await self._proxy_buffered(host, port, proxied_path, body, client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 511, in _proxy_buffered
+    response = await client.fetch(req, raise_error=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+[E 2026-04-29 21:15:42.479 ServerApp] {
+      "Host": "127.0.0.1:9169",
+      "Accept": "*/*",
+      "Referer": "http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+    }
+[E 2026-04-29 21:15:42.479 ServerApp] 500 GET /proxy/34407/individual-plots.json?1777511742392 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 10.73ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 21:15:48.126 ServerApp] Trying to establish websocket connection to ws://localhost:8787/individual-workers-memory/ws
+[I 2026-04-29 21:15:48.376 ServerApp] Trying to establish websocket connection to ws://localhost:8787/individual-task-stream/ws
+[I 2026-04-29 21:15:48.704 ServerApp] Trying to establish websocket connection to ws://localhost:8787/individual-progress/ws
+[I 2026-04-29 21:15:49.067 ServerApp] Websocket connection established to ws://localhost:8787/individual-workers-memory/ws
+[I 2026-04-29 21:15:49.084 ServerApp] Websocket connection established to ws://localhost:8787/individual-task-stream/ws
+[I 2026-04-29 21:15:49.101 ServerApp] Websocket connection established to ws://localhost:8787/individual-progress/ws
+[W 2026-04-29 21:15:55.738 ServerApp] 404 GET /api/metrics/v1?1777511755622 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.32ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 21:15:55.744 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 21:16:19.336 ServerApp] 404 GET /api/metrics/v1?1777511779295 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 3.34ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_example_ASC_transport.ipynb
+[W 2026-04-29 21:16:27.056 ServerApp] 404 GET /api/metrics/v1?1777511786990 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.23ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 21:18:13.609 ServerApp] 404 GET /api/metrics/v1?1777511893394 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 12.11ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 21:18:13.637 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 21:24:17.955 ServerApp] 404 GET /api/metrics/v1?1777512257788 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 15.38ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 21:24:19.302 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 21:24:22.943 ServerApp] Copying 'examples/eccov4r4_budget_mds_example.ipynb' to '/examples'
+[W 2026-04-29 21:24:26.265 ServerApp] 404 GET /api/metrics/v1?1777512266222 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.40ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 21:24:31.413 ServerApp] Kernel started: a108ffa4-3362-4cba-bc3a-f806ff5e99b4
+[I 2026-04-29 21:24:34.645 ServerApp] Adapting from protocol version 5.3 (kernel a108ffa4-3362-4cba-bc3a-f806ff5e99b4) to 5.4 (client).
+[I 2026-04-29 21:24:34.648 ServerApp] Connecting to kernel a108ffa4-3362-4cba-bc3a-f806ff5e99b4.
+[I 2026-04-29 21:25:45.757 ServerApp] Starting buffering for 10b4c5ef-4ad0-4827-9c24-45e9fa0437ec:eb29feb1-efc4-49e7-92fb-50dad6541f63
+[I 2026-04-29 21:25:45.758 ServerApp] Starting buffering for a108ffa4-3362-4cba-bc3a-f806ff5e99b4:0ea82993-a5cd-446e-aa8a-13355ab88daf
+[I 2026-04-29 21:27:11.566 ServerApp] Adapting from protocol version 5.3 (kernel a108ffa4-3362-4cba-bc3a-f806ff5e99b4) to 5.4 (client).
+[I 2026-04-29 21:27:11.568 ServerApp] Connecting to kernel a108ffa4-3362-4cba-bc3a-f806ff5e99b4.
+[I 2026-04-29 21:27:11.568 ServerApp] Restoring connection for a108ffa4-3362-4cba-bc3a-f806ff5e99b4:0ea82993-a5cd-446e-aa8a-13355ab88daf
+[I 2026-04-29 21:27:11.788 ServerApp] Trying to establish websocket connection to ws://localhost:8787/individual-task-stream/ws
+[I 2026-04-29 21:27:11.954 ServerApp] Trying to establish websocket connection to ws://localhost:8787/individual-workers-memory/ws
+[I 2026-04-29 21:27:12.133 ServerApp] Adapting from protocol version 5.3 (kernel 10b4c5ef-4ad0-4827-9c24-45e9fa0437ec) to 5.4 (client).
+[I 2026-04-29 21:27:12.134 ServerApp] Connecting to kernel 10b4c5ef-4ad0-4827-9c24-45e9fa0437ec.
+[I 2026-04-29 21:27:12.134 ServerApp] Restoring connection for 10b4c5ef-4ad0-4827-9c24-45e9fa0437ec:eb29feb1-efc4-49e7-92fb-50dad6541f63
+[I 2026-04-29 21:27:12.231 ServerApp] Trying to establish websocket connection to ws://localhost:8787/individual-progress/ws
+2026-04-29 21:27:31,790 - ServerApp - ERROR - Uncaught exception GET /proxy/8787/individual-task-stream/ws (10.141.0.12)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9169', method='GET', uri='/proxy/8787/individual-task-stream/ws', version='HTTP/1.1', remote_ip='10.141.0.12')
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/websocket.py", line 967, in _accept_connection
+    await open_result
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 747, in open
+    return await self.proxy_open("localhost", port, proxied_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 675, in proxy_open
+    await start_websocket_connection()
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 655, in start_websocket_connection
+    self.ws = await pingable_ws_connect(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+tornado.simple_httpclient.HTTPTimeoutError: Timeout during request
+2026-04-29 21:27:31,956 - ServerApp - ERROR - Uncaught exception GET /proxy/8787/individual-workers-memory/ws (10.141.0.12)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9169', method='GET', uri='/proxy/8787/individual-workers-memory/ws', version='HTTP/1.1', remote_ip='10.141.0.12')
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/websocket.py", line 967, in _accept_connection
+    await open_result
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 747, in open
+    return await self.proxy_open("localhost", port, proxied_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 675, in proxy_open
+    await start_websocket_connection()
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 655, in start_websocket_connection
+    self.ws = await pingable_ws_connect(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+tornado.simple_httpclient.HTTPTimeoutError: Timeout during request
+2026-04-29 21:27:32,232 - ServerApp - ERROR - Uncaught exception GET /proxy/8787/individual-progress/ws (10.141.0.12)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9169', method='GET', uri='/proxy/8787/individual-progress/ws', version='HTTP/1.1', remote_ip='10.141.0.12')
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/websocket.py", line 967, in _accept_connection
+    await open_result
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 747, in open
+    return await self.proxy_open("localhost", port, proxied_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 675, in proxy_open
+    await start_websocket_connection()
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 655, in start_websocket_connection
+    self.ws = await pingable_ws_connect(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+tornado.simple_httpclient.HTTPTimeoutError: Timeout during request
+[I 2026-04-29 21:27:34.548 ServerApp] Trying to establish websocket connection to ws://localhost:8787/individual-task-stream/ws
+[I 2026-04-29 21:27:34.670 ServerApp] Trying to establish websocket connection to ws://localhost:8787/individual-workers-memory/ws
+[I 2026-04-29 21:27:34.754 ServerApp] Trying to establish websocket connection to ws://localhost:8787/individual-progress/ws
+2026-04-29 21:27:54,552 - ServerApp - ERROR - Uncaught exception GET /proxy/8787/individual-task-stream/ws (10.141.0.12)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9169', method='GET', uri='/proxy/8787/individual-task-stream/ws', version='HTTP/1.1', remote_ip='10.141.0.12')
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/websocket.py", line 967, in _accept_connection
+    await open_result
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 747, in open
+    return await self.proxy_open("localhost", port, proxied_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 675, in proxy_open
+    await start_websocket_connection()
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 655, in start_websocket_connection
+    self.ws = await pingable_ws_connect(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+tornado.simple_httpclient.HTTPTimeoutError: Timeout during request
+2026-04-29 21:27:54,672 - ServerApp - ERROR - Uncaught exception GET /proxy/8787/individual-workers-memory/ws (10.141.0.12)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9169', method='GET', uri='/proxy/8787/individual-workers-memory/ws', version='HTTP/1.1', remote_ip='10.141.0.12')
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/websocket.py", line 967, in _accept_connection
+    await open_result
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 747, in open
+    return await self.proxy_open("localhost", port, proxied_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 675, in proxy_open
+    await start_websocket_connection()
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 655, in start_websocket_connection
+    self.ws = await pingable_ws_connect(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+tornado.simple_httpclient.HTTPTimeoutError: Timeout during request
+2026-04-29 21:27:54,757 - ServerApp - ERROR - Uncaught exception GET /proxy/8787/individual-progress/ws (10.141.0.12)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9169', method='GET', uri='/proxy/8787/individual-progress/ws', version='HTTP/1.1', remote_ip='10.141.0.12')
+Traceback (most recent call last):
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/tornado/websocket.py", line 967, in _accept_connection
+    await open_result
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 747, in open
+    return await self.proxy_open("localhost", port, proxied_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 675, in proxy_open
+    await start_websocket_connection()
+  File "/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/jupyter_server_proxy/handlers.py", line 655, in start_websocket_connection
+    self.ws = await pingable_ws_connect(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+tornado.simple_httpclient.HTTPTimeoutError: Timeout during request
+[I 2026-04-29 21:27:59.542 ServerApp] Trying to establish websocket connection to ws://localhost:8787/individual-task-stream/ws
+[I 2026-04-29 21:27:59.617 ServerApp] Trying to establish websocket connection to ws://localhost:8787/individual-workers-memory/ws
+[I 2026-04-29 21:27:59.689 ServerApp] Trying to establish websocket connection to ws://localhost:8787/individual-progress/ws
+[I 2026-04-29 21:27:59.705 ServerApp] Websocket connection established to ws://localhost:8787/individual-task-stream/ws
+[I 2026-04-29 21:27:59.857 ServerApp] Websocket connection established to ws://localhost:8787/individual-workers-memory/ws
+[I 2026-04-29 21:28:00.072 ServerApp] Websocket connection established to ws://localhost:8787/individual-progress/ws
+[I 2026-04-29 21:28:08.551 ServerApp] Trying to establish websocket connection to ws://localhost:8787/individual-task-stream/ws
+[I 2026-04-29 21:28:08.638 ServerApp] Trying to establish websocket connection to ws://localhost:8787/individual-workers-memory/ws
+[I 2026-04-29 21:28:08.722 ServerApp] Trying to establish websocket connection to ws://localhost:8787/individual-progress/ws
+[I 2026-04-29 21:28:08.776 ServerApp] Websocket connection established to ws://localhost:8787/individual-task-stream/ws
+[I 2026-04-29 21:28:08.853 ServerApp] Websocket connection established to ws://localhost:8787/individual-workers-memory/ws
+[I 2026-04-29 21:28:09.377 ServerApp] Websocket connection established to ws://localhost:8787/individual-progress/ws
+[I 2026-04-29 21:28:11.920 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[I 2026-04-29 21:28:25.546 ServerApp] Trying to establish websocket connection to ws://localhost:8787/individual-task-stream/ws
+[I 2026-04-29 21:28:25.703 ServerApp] Trying to establish websocket connection to ws://localhost:8787/individual-workers-memory/ws
+[I 2026-04-29 21:28:25.781 ServerApp] Websocket connection established to ws://localhost:8787/individual-task-stream/ws
+[I 2026-04-29 21:28:26.280 ServerApp] Websocket connection established to ws://localhost:8787/individual-workers-memory/ws
+[I 2026-04-29 21:28:26.546 ServerApp] Trying to establish websocket connection to ws://localhost:8787/individual-progress/ws
+[I 2026-04-29 21:28:26.810 ServerApp] Websocket connection established to ws://localhost:8787/individual-progress/ws
+[W 2026-04-29 21:28:44.428 ServerApp] 404 GET /api/metrics/v1?1777512524225 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 5.58ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 21:29:28.794 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:30:44.084 ServerApp] 404 GET /api/metrics/v1?1777512643867 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 9.34ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:30:56.200 ServerApp] 404 GET /api/metrics/v1?1777512656142 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.13ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:31:05.924 ServerApp] 404 GET /api/metrics/v1?1777512665878 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.35ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:31:22.432 ServerApp] 404 GET /api/metrics/v1?1777512682276 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.33ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 21:31:30.087 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 21:31:51.817 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:31:52.480 ServerApp] 404 GET /api/metrics/v1?1777512712436 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 6.98ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:32:22.532 ServerApp] 404 GET /api/metrics/v1?1777512742485 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.20ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 21:32:29.422 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 21:32:31.882 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 21:34:32.889 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:35:07.544 ServerApp] 404 GET /api/metrics/v1?1777512907476 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 11.07ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:36:06.664 ServerApp] 404 GET /api/metrics/v1?1777512966478 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 3.38ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:36:07.857 ServerApp] 404 GET /api/contents/VVELMASS_mon_mean?content=0&hash=0&1777512967797 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 5.31ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:36:07.863 ServerApp] 404 GET /api/contents/grid_llc270?content=0&hash=0&1777512967798 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 3.74ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:36:07.865 ServerApp] 404 GET /api/contents/VVELMASS_mon_mean?content=0&hash=0&1777512967798 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 5.09ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 21:36:33.841 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:36:44.532 ServerApp] 404 GET /api/metrics/v1?1777513004477 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 7.68ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:36:56.553 ServerApp] 404 GET /api/metrics/v1?1777513016513 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.38ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:37:47.531 ServerApp] 404 GET /api/metrics/v1?1777513067480 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 7.23ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 21:38:35.827 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 21:40:16.173 ServerApp] Saving file at /examples/eccov4r4_budget_mds_example.ipynb
+[W 2026-04-29 21:42:36.731 ServerApp] 404 GET /api/metrics/v1?1777513356552 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 7.04ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:42:50.434 ServerApp] 404 GET /api/metrics/v1?1777513370384 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 5.21ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:43:04.535 ServerApp] 404 GET /api/metrics/v1?1777513384485 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.20ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:44:26.744 ServerApp] 404 GET /api/metrics/v1?1777513466595 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 9.52ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 21:44:38.940 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:44:50.517 ServerApp] 404 GET /api/metrics/v1?1777513490478 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.28ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:44:57.885 ServerApp] 404 GET /api/metrics/v1?1777513497840 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.14ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 21:45:02.964 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:45:05.765 ServerApp] 404 GET /api/metrics/v1?1777513505720 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.29ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:45:23.525 ServerApp] 404 GET /api/metrics/v1?1777513523478 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.23ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:45:33.442 ServerApp] 404 GET /api/metrics/v1?1777513533394 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 6.32ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:45:57.320 ServerApp] 404 GET /api/metrics/v1?1777513557270 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.33ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:46:19.125 ServerApp] 404 GET /api/metrics/v1?1777513579084 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.24ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 21:47:04.864 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:47:06.528 ServerApp] 404 GET /api/metrics/v1?1777513626477 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 7.95ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:47:30.526 ServerApp] 404 GET /api/metrics/v1?1777513650478 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.24ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:47:35.851 ServerApp] 404 GET /api/metrics/v1?1777513655809 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.12ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:47:48.292 ServerApp] 404 GET /api/metrics/v1?1777513668237 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.29ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:48:18.337 ServerApp] 404 GET /api/metrics/v1?1777513698294 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 7.96ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:48:48.473 ServerApp] 404 GET /api/metrics/v1?1777513728424 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.23ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 21:49:06.608 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:49:18.528 ServerApp] 404 GET /api/metrics/v1?1777513758476 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 7.46ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:49:49.233 ServerApp] 404 GET /api/metrics/v1?1777513788529 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.22ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:50:09.504 ServerApp] 404 GET /api/metrics/v1?1777513809457 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 7.93ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:50:39.627 ServerApp] 404 GET /api/metrics/v1?1777513839579 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 6.98ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 21:51:07.933 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:51:09.680 ServerApp] 404 GET /api/metrics/v1?1777513869629 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.24ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:51:39.835 ServerApp] 404 GET /api/metrics/v1?1777513899681 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 7.62ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 21:53:09.199 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:53:26.821 ServerApp] 404 GET /api/metrics/v1?1777514006766 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 8.49ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:53:35.132 ServerApp] 404 GET /api/metrics/v1?1777514015074 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.28ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:53:46.672 ServerApp] 404 GET /api/metrics/v1?1777514026596 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.19ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:54:08.329 ServerApp] 404 GET /api/metrics/v1?1777514048284 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.29ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:54:54.538 ServerApp] 404 GET /api/metrics/v1?1777514094481 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 18.80ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 21:55:10.896 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:55:25.525 ServerApp] 404 GET /api/metrics/v1?1777514125482 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.37ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:55:42.537 ServerApp] 404 GET /api/metrics/v1?1777514142481 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.33ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:55:51.976 ServerApp] 404 GET /api/metrics/v1?1777514151868 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.20ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:56:20.531 ServerApp] 404 GET /api/metrics/v1?1777514180481 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 5.55ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:56:25.850 ServerApp] 404 GET /api/metrics/v1?1777514185557 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.23ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:56:34.089 ServerApp] 404 GET /api/metrics/v1?1777514194046 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.29ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 21:57:12.119 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:57:12.549 ServerApp] 404 GET /api/metrics/v1?1777514232483 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 22.89ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:57:17.989 ServerApp] 404 GET /api/metrics/v1?1777514237952 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.20ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:58:03.572 ServerApp] 404 GET /api/metrics/v1?1777514283481 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 7.94ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 21:58:45.531 ServerApp] 404 GET /api/metrics/v1?1777514325484 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.18ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 21:59:13.786 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:01:43.298 ServerApp] 404 GET /api/metrics/v1?1777514503243 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 5.91ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:02:01.600 ServerApp] 404 GET /api/metrics/v1?1777514521484 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.50ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:02:14.048 ServerApp] 404 GET /api/metrics/v1?1777514533998 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.20ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:02:44.105 ServerApp] 404 GET /api/metrics/v1?1777514564056 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 7.89ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:03:14.149 ServerApp] 404 GET /api/metrics/v1?1777514594108 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.25ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 22:03:14.865 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:03:44.361 ServerApp] 404 GET /api/metrics/v1?1777514624281 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 14.20ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:04:14.407 ServerApp] 404 GET /api/metrics/v1?1777514654367 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.47ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:04:27.765 ServerApp] 404 GET /api/metrics/v1?1777514667719 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.44ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 22:05:15.914 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:05:26.634 ServerApp] 404 GET /api/metrics/v1?1777514726486 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 6.80ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:05:47.575 ServerApp] 404 GET /api/metrics/v1?1777514747482 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 9.05ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:06:01.762 ServerApp] 404 GET /api/metrics/v1?1777514761718 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.27ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:06:23.858 ServerApp] 404 GET /api/metrics/v1?1777514783810 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.54ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 22:06:38.721 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 22:06:44.827 ServerApp] Kernel interrupted: a108ffa4-3362-4cba-bc3a-f806ff5e99b4
+[I 2026-04-29 22:06:45.067 ServerApp] Kernel interrupted: a108ffa4-3362-4cba-bc3a-f806ff5e99b4
+[W 2026-04-29 22:06:48.150 ServerApp] 404 GET /api/metrics/v1?1777514808099 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 10.62ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:06:58.077 ServerApp] 404 GET /api/metrics/v1?1777514818034 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.28ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:07:14.476 ServerApp] 404 GET /api/metrics/v1?1777514834431 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.58ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:07:40.538 ServerApp] 404 GET /api/metrics/v1?1777514860482 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.24ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:07:59.536 ServerApp] 404 GET /api/metrics/v1?1777514879482 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 7.06ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:08:12.993 ServerApp] 404 GET /api/metrics/v1?1777514892903 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.29ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 22:08:38.658 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:08:39.282 ServerApp] 404 GET /api/metrics/v1?1777514919082 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 26.27ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 22:08:40.893 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 22:08:47.705 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:09:09.418 ServerApp] 404 GET /api/metrics/v1?1777514949290 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 6.60ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:09:49.526 ServerApp] 404 GET /api/metrics/v1?1777514989484 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 5.32ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:09:57.142 ServerApp] 404 GET /api/metrics/v1?1777514997101 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.17ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:10:45.629 ServerApp] 404 GET /api/metrics/v1?1777515045485 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 9.69ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 22:10:49.711 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:10:59.836 ServerApp] 404 GET /api/metrics/v1?1777515059782 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.81ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 22:11:25.141 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:11:29.711 ServerApp] 404 GET /api/metrics/v1?1777515089663 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.22ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:11:47.751 ServerApp] 404 GET /api/metrics/v1?1777515107706 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 6.54ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 22:12:10.360 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:12:17.797 ServerApp] 404 GET /api/metrics/v1?1777515137756 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.28ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:12:23.257 ServerApp] 404 GET /api/metrics/v1?1777515143156 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.14ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:12:33.447 ServerApp] 404 GET /api/metrics/v1?1777515153405 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.18ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 22:12:36.226 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:13:03.555 ServerApp] 404 GET /api/metrics/v1?1777515183465 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 46.58ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 22:13:09.672 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 22:13:12.920 ServerApp] Kernel interrupted: a108ffa4-3362-4cba-bc3a-f806ff5e99b4
+[I 2026-04-29 22:13:13.092 ServerApp] Kernel interrupted: a108ffa4-3362-4cba-bc3a-f806ff5e99b4
+[I 2026-04-29 22:13:13.764 ServerApp] Kernel interrupted: a108ffa4-3362-4cba-bc3a-f806ff5e99b4
+[W 2026-04-29 22:13:16.876 ServerApp] 404 GET /api/metrics/v1?1777515196826 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.41ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:13:31.995 ServerApp] 404 GET /api/metrics/v1?1777515211950 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.33ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 22:13:54.217 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:14:02.108 ServerApp] 404 GET /api/metrics/v1?1777515242065 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.37ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 22:14:15.316 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:14:32.161 ServerApp] 404 GET /api/metrics/v1?1777515272114 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 7.66ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:17:35.037 ServerApp] 404 GET /api/metrics/v1?1777515454926 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 9.23ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:17:43.737 ServerApp] 404 GET /api/metrics/v1?1777515463628 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.72ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 22:18:17.821 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:18:38.538 ServerApp] 404 GET /api/metrics/v1?1777515518489 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 7.25ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:18:52.006 ServerApp] 404 GET /api/metrics/v1?1777515531959 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.20ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 22:18:59.587 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:19:07.897 ServerApp] 404 GET /api/metrics/v1?1777515547853 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.31ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:19:28.433 ServerApp] 404 GET /api/metrics/v1?1777515568379 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.24ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 22:19:33.032 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:19:58.495 ServerApp] 404 GET /api/metrics/v1?1777515598440 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 8.47ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:21:08.538 ServerApp] 404 GET /api/metrics/v1?1777515668486 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 10.12ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:21:16.616 ServerApp] 404 GET /api/metrics/v1?1777515676452 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.22ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 22:21:26.100 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:21:28.674 ServerApp] 404 GET /api/metrics/v1?1777515688624 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.11ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:21:45.972 ServerApp] 404 GET /api/metrics/v1?1777515705899 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.10ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:22:54.536 ServerApp] 404 GET /api/metrics/v1?1777515774490 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 6.86ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:23:08.526 ServerApp] 404 GET /api/metrics/v1?1777515788470 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.17ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 22:23:13.140 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[W 2026-04-29 22:23:38.574 ServerApp] 404 GET /api/metrics/v1?1777515818532 (37ebe9cc7f544dc88e70082fec832823@10.141.0.12) 4.31ms referer=http://127.0.0.1:9169/lab/tree/examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 22:25:14.880 ServerApp] Saving file at /examples/eccov4r4_budget_mds_v4r5.ipynb
+[I 2026-04-29 22:27:27.351 ServerApp] Starting buffering for a108ffa4-3362-4cba-bc3a-f806ff5e99b4:0ea82993-a5cd-446e-aa8a-13355ab88daf
+[I 2026-04-29 22:27:27.353 ServerApp] Starting buffering for 10b4c5ef-4ad0-4827-9c24-45e9fa0437ec:eb29feb1-efc4-49e7-92fb-50dad6541f63
+slurmstepd: error: *** JOB 1920523 ON pn031 CANCELLED AT 2026-04-30T02:25:49 DUE TO TIME LIMIT ***

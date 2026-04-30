@@ -1,0 +1,17 @@
+2026-04-29 21:30:53,637 - distributed.nanny - INFO -         Start Nanny at: 'tcp://172.16.3.168:41161'
+2026-04-29 21:30:56,071 - distributed.worker - INFO -       Start worker at:   tcp://172.16.3.168:35068
+2026-04-29 21:30:56,071 - distributed.worker - INFO -          Listening to:   tcp://172.16.3.168:35068
+2026-04-29 21:30:56,071 - distributed.worker - INFO -           Worker name:             SLURMCluster-2
+2026-04-29 21:30:56,071 - distributed.worker - INFO -          dashboard at:         172.16.3.168:38657
+2026-04-29 21:30:56,071 - distributed.worker - INFO - Waiting to connect to:    tcp://172.16.3.81:37582
+2026-04-29 21:30:56,071 - distributed.worker - INFO - -------------------------------------------------
+2026-04-29 21:30:56,071 - distributed.worker - INFO -               Threads:                         36
+2026-04-29 21:30:56,071 - distributed.worker - INFO -                Memory:                 176.95 GiB
+2026-04-29 21:30:56,071 - distributed.worker - INFO -       Local Directory: /tmp/dask-scratch-space/worker-z1j5sxxz
+2026-04-29 21:30:56,071 - distributed.worker - INFO - -------------------------------------------------
+2026-04-29 21:30:56,104 - distributed.worker - INFO - Starting Worker plugin shuffle
+2026-04-29 21:30:56,105 - distributed.worker - INFO -         Registered to:    tcp://172.16.3.81:37582
+2026-04-29 21:30:56,105 - distributed.worker - INFO - -------------------------------------------------
+2026-04-29 21:30:56,105 - distributed.core - INFO - Starting established connection to tcp://172.16.3.81:37582
+2026-04-29 21:32:09,098 - distributed.core - INFO - Event loop was unresponsive in Worker for 4.05s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+slurmstepd: error: *** JOB 1920590 ON pn118 CANCELLED AT 2026-04-30T00:31:18 DUE TO TIME LIMIT ***

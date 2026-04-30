@@ -1,0 +1,19 @@
+2026-04-29 21:06:10,077 - distributed.nanny - INFO -         Start Nanny at: 'tcp://172.16.3.161:42630'
+2026-04-29 21:06:11,425 - distributed.worker - INFO -       Start worker at:   tcp://172.16.3.161:37236
+2026-04-29 21:06:11,426 - distributed.worker - INFO -          Listening to:   tcp://172.16.3.161:37236
+2026-04-29 21:06:11,426 - distributed.worker - INFO -           Worker name:             SLURMCluster-1
+2026-04-29 21:06:11,426 - distributed.worker - INFO -          dashboard at:         172.16.3.161:38720
+2026-04-29 21:06:11,426 - distributed.worker - INFO - Waiting to connect to:    tcp://172.16.3.81:45158
+2026-04-29 21:06:11,426 - distributed.worker - INFO - -------------------------------------------------
+2026-04-29 21:06:11,426 - distributed.worker - INFO -               Threads:                         36
+2026-04-29 21:06:11,426 - distributed.worker - INFO -                Memory:                 176.95 GiB
+2026-04-29 21:06:11,426 - distributed.worker - INFO -       Local Directory: /tmp/dask-scratch-space/worker-4d8x5kp0
+2026-04-29 21:06:11,426 - distributed.worker - INFO - -------------------------------------------------
+2026-04-29 21:06:11,684 - distributed.worker - INFO - Starting Worker plugin shuffle
+2026-04-29 21:06:11,684 - distributed.worker - INFO -         Registered to:    tcp://172.16.3.81:45158
+2026-04-29 21:06:11,684 - distributed.worker - INFO - -------------------------------------------------
+2026-04-29 21:06:11,685 - distributed.core - INFO - Starting established connection to tcp://172.16.3.81:45158
+2026-04-29 21:09:58,349 - distributed.core - INFO - Event loop was unresponsive in Worker for 5.42s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+/vortexfs1/home/anthony.meza/miniforge3/envs/docs_env_xbudget/lib/python3.12/site-packages/dask/_task_spec.py:768: RuntimeWarning: invalid value encountered in divide
+  return self.func(*new_argspec)
+slurmstepd: error: *** JOB 1920553 ON pn111 CANCELLED AT 2026-04-30T00:06:18 DUE TO TIME LIMIT ***

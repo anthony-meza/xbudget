@@ -1,0 +1,18 @@
+2026-04-29 10:17:59,934 - distributed.nanny - INFO -         Start Nanny at: 'tcp://172.16.3.79:41889'
+2026-04-29 10:18:01,056 - distributed.diskutils - INFO - Found stale lock file and directory '/tmp/dask-scratch-space/worker-456c_k3j', purging
+2026-04-29 10:18:02,105 - distributed.worker - INFO -       Start worker at:    tcp://172.16.3.79:41191
+2026-04-29 10:18:02,105 - distributed.worker - INFO -          Listening to:    tcp://172.16.3.79:41191
+2026-04-29 10:18:02,105 - distributed.worker - INFO -           Worker name:             SLURMCluster-1
+2026-04-29 10:18:02,105 - distributed.worker - INFO -          dashboard at:          172.16.3.79:46855
+2026-04-29 10:18:02,105 - distributed.worker - INFO - Waiting to connect to:   tcp://172.16.3.190:37995
+2026-04-29 10:18:02,105 - distributed.worker - INFO - -------------------------------------------------
+2026-04-29 10:18:02,105 - distributed.worker - INFO -               Threads:                         36
+2026-04-29 10:18:02,106 - distributed.worker - INFO -                Memory:                 176.95 GiB
+2026-04-29 10:18:02,106 - distributed.worker - INFO -       Local Directory: /tmp/dask-scratch-space/worker-obgu1aem
+2026-04-29 10:18:02,106 - distributed.worker - INFO - -------------------------------------------------
+2026-04-29 10:18:02,129 - distributed.worker - INFO - Starting Worker plugin shuffle
+2026-04-29 10:18:02,130 - distributed.worker - INFO -         Registered to:   tcp://172.16.3.190:37995
+2026-04-29 10:18:02,130 - distributed.worker - INFO - -------------------------------------------------
+2026-04-29 10:18:02,132 - distributed.core - INFO - Starting established connection to tcp://172.16.3.190:37995
+2026-04-29 10:19:25,770 - distributed.core - INFO - Event loop was unresponsive in Worker for 6.52s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+slurmstepd: error: *** JOB 1920032 ON pn029 CANCELLED AT 2026-04-29T13:18:11 DUE TO TIME LIMIT ***

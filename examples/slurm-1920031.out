@@ -1,0 +1,19 @@
+2026-04-29 10:18:00,550 - distributed.nanny - INFO -         Start Nanny at: 'tcp://172.16.3.78:42975'
+2026-04-29 10:18:01,873 - distributed.diskutils - INFO - Found stale lock file and directory '/tmp/dask-scratch-space/scheduler-80ux7v2r', purging
+2026-04-29 10:18:03,152 - distributed.worker - INFO -       Start worker at:    tcp://172.16.3.78:38562
+2026-04-29 10:18:03,152 - distributed.worker - INFO -          Listening to:    tcp://172.16.3.78:38562
+2026-04-29 10:18:03,152 - distributed.worker - INFO -           Worker name:             SLURMCluster-0
+2026-04-29 10:18:03,152 - distributed.worker - INFO -          dashboard at:          172.16.3.78:44593
+2026-04-29 10:18:03,153 - distributed.worker - INFO - Waiting to connect to:   tcp://172.16.3.190:37995
+2026-04-29 10:18:03,153 - distributed.worker - INFO - -------------------------------------------------
+2026-04-29 10:18:03,153 - distributed.worker - INFO -               Threads:                         36
+2026-04-29 10:18:03,153 - distributed.worker - INFO -                Memory:                 176.95 GiB
+2026-04-29 10:18:03,153 - distributed.worker - INFO -       Local Directory: /tmp/dask-scratch-space/worker-_rrebc4e
+2026-04-29 10:18:03,153 - distributed.worker - INFO - -------------------------------------------------
+2026-04-29 10:18:03,183 - distributed.worker - INFO - Starting Worker plugin shuffle
+2026-04-29 10:18:03,184 - distributed.worker - INFO -         Registered to:   tcp://172.16.3.190:37995
+2026-04-29 10:18:03,185 - distributed.worker - INFO - -------------------------------------------------
+2026-04-29 10:18:03,186 - distributed.core - INFO - Starting established connection to tcp://172.16.3.190:37995
+2026-04-29 10:18:12,592 - distributed.core - INFO - Event loop was unresponsive in Worker for 4.57s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+2026-04-29 10:18:24,696 - distributed.core - INFO - Event loop was unresponsive in Worker for 6.99s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+slurmstepd: error: *** JOB 1920031 ON pn028 CANCELLED AT 2026-04-29T13:18:11 DUE TO TIME LIMIT ***

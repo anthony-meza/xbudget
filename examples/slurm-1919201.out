@@ -1,0 +1,18 @@
+2026-04-28 19:22:41,658 - distributed.nanny - INFO -         Start Nanny at: 'tcp://172.16.3.165:42829'
+2026-04-28 19:22:45,493 - distributed.worker - INFO -       Start worker at:   tcp://172.16.3.165:33208
+2026-04-28 19:22:45,495 - distributed.worker - INFO -          Listening to:   tcp://172.16.3.165:33208
+2026-04-28 19:22:45,495 - distributed.worker - INFO -           Worker name:             SLURMCluster-1
+2026-04-28 19:22:45,495 - distributed.worker - INFO -          dashboard at:         172.16.3.165:39237
+2026-04-28 19:22:45,495 - distributed.worker - INFO - Waiting to connect to:    tcp://172.16.3.78:37670
+2026-04-28 19:22:45,495 - distributed.worker - INFO - -------------------------------------------------
+2026-04-28 19:22:45,495 - distributed.worker - INFO -               Threads:                         36
+2026-04-28 19:22:45,495 - distributed.worker - INFO -                Memory:                 176.95 GiB
+2026-04-28 19:22:45,495 - distributed.worker - INFO -       Local Directory: /tmp/dask-scratch-space/worker-2jjxqa2y
+2026-04-28 19:22:45,495 - distributed.worker - INFO - -------------------------------------------------
+2026-04-28 19:22:45,544 - distributed.worker - INFO - Starting Worker plugin shuffle
+2026-04-28 19:22:45,545 - distributed.worker - INFO -         Registered to:    tcp://172.16.3.78:37670
+2026-04-28 19:22:45,545 - distributed.worker - INFO - -------------------------------------------------
+2026-04-28 19:22:45,546 - distributed.core - INFO - Starting established connection to tcp://172.16.3.78:37670
+2026-04-28 19:22:52,305 - distributed.core - INFO - Event loop was unresponsive in Worker for 6.38s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+2026-04-28 19:23:09,220 - distributed.core - INFO - Event loop was unresponsive in Worker for 7.51s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+slurmstepd: error: *** JOB 1919201 ON pn115 CANCELLED AT 2026-04-28T22:23:02 DUE TO TIME LIMIT ***
